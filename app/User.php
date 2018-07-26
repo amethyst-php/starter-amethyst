@@ -2,7 +2,7 @@
 
 namespace App;
 
-use Railken\LaraOre\User\User as BaseUser;
+use Railken\LaraOre\Concerns\Auth\User as BaseUser;
 
 class User extends BaseUser
 {

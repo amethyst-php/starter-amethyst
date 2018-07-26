@@ -10,6 +10,7 @@
         "laravel/framework": "5.6.*",
         "laravel/passport": "^6.0",
         "laravel/tinker": "^1.0",
+        "railken/lara-ore-auth": "dev-master",
         "railken/lara-ore-user": "dev-master"
     },
     "require-dev": {
