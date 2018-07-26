@@ -13,3 +13,5 @@ yarn-error.log
 .env
 .php_cs_fixer
 /build
+
+\.php_cs\.cache
