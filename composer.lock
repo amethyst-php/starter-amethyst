@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "220bb6330a5c193ae58c370a51002e51",
+    "content-hash": "1d1ed9cbbea60f381d635c33828c8247",
     "packages": [
         {
             "name": "danielstjules/stringy",
@@ -2296,6 +2296,58 @@
                 "api"
             ],
             "time": "2018-07-01T01:58:45+00:00"
+        },
+        {
+            "name": "railken/lara-ore-account",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/railken/lara-ore-account.git",
+                "reference": "0252d1ce0eb3479ab3b67c7df60f0e5f740f4615"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/railken/lara-ore-account/zipball/0252d1ce0eb3479ab3b67c7df60f0e5f740f4615",
+                "reference": "0252d1ce0eb3479ab3b67c7df60f0e5f740f4615",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "railken/lara-ore-api": "dev-master",
+                "railken/lara-ore-auth": "dev-master",
+                "railken/lara-ore-support": "dev-master",
+                "railken/lara-ore-user": "dev-master"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.8.1",
+                "orchestra/testbench": "~3.6",
+                "phpstan/phpstan": "^0.9.2",
+                "phpunit/phpunit": "~7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Railken\\LaraOre\\AccountServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Railken\\LaraOre\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "account",
+                "lara-ore",
+                "lara-ore-account",
+                "laravel"
+            ],
+            "time": "2018-07-23T20:16:48+00:00"
         },
         {
             "name": "railken/lara-ore-api",
@@ -6327,6 +6379,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "railken/lara-ore-account": 20,
         "railken/lara-ore-auth": 20,
         "railken/lara-ore-user": 20
     },
