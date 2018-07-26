@@ -1,7 +1,7 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "name": "railken/laravel-ore-starter",
+    "description": "The starter pack for lara-ore packages",
+    "keywords": ["framework", "laravel", "lara-ore"],
     "license": "MIT",
     "type": "project",
     "require": {
@@ -12,7 +12,17 @@
         "laravel/tinker": "^1.0",
         "railken/lara-ore-account": "dev-master",
         "railken/lara-ore-auth": "dev-master",
-        "railken/lara-ore-user": "dev-master"
+        "railken/lara-ore-notification": "dev-master",
+        "railken/lara-ore-user": "dev-master",
+        "railken/lara-ore-config": "dev-master",
+        "railken/lara-ore-disk": "dev-master",
+        "railken/lara-ore-file": "dev-master",
+        "railken/lara-ore-repository": "dev-master",
+        "railken/lara-ore-data-builder": "dev-master",
+        "railken/lara-ore-template": "dev-master",
+        "railken/lara-ore-exporter": "dev-master",
+        "railken/lara-ore-file-generator": "dev-master",
+        "railken/lara-ore-email-sender": "dev-master"
     },
     "require-dev": {
         "filp/whoops": "^2.0",
