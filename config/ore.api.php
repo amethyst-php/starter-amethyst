@@ -2,7 +2,7 @@
 
 return [
     'router' => [
-        'prefix' => 'api/v1/ore',
+        'prefix' => 'api',
     ],
     'http' => [
         'admin' => [
