@@ -14,3 +14,5 @@ yarn-error.log
 .php_cs_fixer
 /build
 \.php_cs\.cache
+composer\.lock
+laravel-echo-server\.json

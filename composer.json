@@ -11,6 +11,7 @@
         "laravel/framework": "5.6.*",
         "laravel/passport": "^6.0",
         "laravel/tinker": "^1.0",
+        "predis/predis": "^1.1",
         "railken/amethyst-account": "0.1.*",
         "railken/amethyst-authentication": "0.1.*",
         "railken/amethyst-config": "0.1.*",
