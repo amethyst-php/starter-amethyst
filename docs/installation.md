@@ -6,6 +6,8 @@
     - [Configuration](#configuration)
 - [Web Server Configuration](#web-server-configuration)
     - [Pretty URLs](#pretty-urls)
+- [Database](#database)
+    - [Configuration](#database-configuration)
 
 ## Installation
 
@@ -32,9 +34,6 @@ Make sure to place composer's system-wide vendor bin directory in your `$PATH` s
 
 - macOS: `$HOME/.composer/vendor/bin`
 - GNU / Linux Distributions: `$HOME/.config/composer/vendor/bin`
-
-Download the project:
-    git clone https://github.com/railken/starter-amethyst
 
 #### Local Development Server
 
@@ -67,9 +66,7 @@ Laravel needs almost no other configuration out of the box. You are free to get 
 
 You may also want to configure a few additional components of Laravel, such as:
 
-- [Cache](cache#configuration)
-- [Database](database#configuration)
-- [Session](session#configuration)
+- [Database](#database-configuration)
 
 ## Web Server Configuration
 
@@ -98,3 +95,25 @@ If you are using Nginx, the following directive in your site configuration will 
     location / {
         try_files $uri $uri/ /index.php?$query_string;
     }
+
+## Database
+
+### Database Configuration
+
+Currently, Laravel supports four databases:
+
+<div class="content-list" markdown="1">
+- MySQL
+- PostgreSQL
+- SQLite
+- SQL Server
+</div>
+
+The database configuration for your application is located at `config/database.php`. In this file you may define all of your database connections, as well as specify which connection should be used by default. Examples for most of the supported database systems are provided in this file.
+
+#### SQLite Configuration
+
+After creating a new SQLite database using a command such as `touch database/database.sqlite`, you can easily configure your environment variables to point to this newly created database by using the database's absolute path:
+
+    DB_CONNECTION=sqlite
+    DB_DATABASE=/absolute/path/to/database.sqlite
