@@ -30,6 +30,10 @@ Route::name('index')->get('/', function (Request $request) {
 			$middleware = [$middleware];
 		}
 
+		if (!in_array('api', $middleware)) {
+			return false;
+		}
+
 		if (in_array('auth:api', $middleware) && $user == null) {
 			return false;
 		}
@@ -40,10 +44,13 @@ Route::name('index')->get('/', function (Request $request) {
 
 		return true;
 	})
+	->sortBy(function($route) {
+		return $route->uri;
+	})
 	->map(function($route) {
 		return [
 			'methods' => $route->methods,
-			'uri' => $route->uri
+			'uri' => $route->uri !== "/" ? "/".$route->uri : "/"
 		];
 	})->values()->toArray();
 
