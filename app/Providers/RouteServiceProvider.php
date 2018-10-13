@@ -42,6 +42,7 @@ class RouteServiceProvider extends ServiceProvider
         Route::redirect('', '/api', 301);
 
         Route::prefix('api')
+             ->name('api.')
              ->middleware('api')
              ->namespace($this->namespace)
              ->group(base_path('routes/api.php'));

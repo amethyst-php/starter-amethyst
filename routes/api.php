@@ -12,3 +12,11 @@ use Illuminate\Http\Request;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+Route::name('index')->get('/', function (Request $request) {
+    return [
+    	'name' => config('api.name'),
+    	'url' => config('api.url'),
+    	'description' => config('api.description'),
+    	'version' => config('api.version')
+    ];
+});
