@@ -30,7 +30,7 @@ Route::name('index')->get('/', function (Request $request) {
 			$middleware = [$middleware];
 		}
 
-		if (!in_array('api', $middleware)) {
+		if (!in_array('api', $middleware) && !in_array('auth:api', $middleware)) {
 			return false;
 		}
 
