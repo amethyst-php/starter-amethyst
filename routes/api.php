@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Collection;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,10 +16,42 @@ use Illuminate\Http\Request;
 |
 */
 Route::name('index')->get('/', function (Request $request) {
+
+	$user = $request->user('api');
+	// $user = Auth::user();
+
+
+	$endpoints = Collection::make(Route::getRoutes())
+	->filter(function ($route) use ($user) {
+		$middleware = isset($route->action['middleware']) ? $route->action['middleware'] : null;
+
+
+		if (!is_array($middleware)) {
+			$middleware = [$middleware];
+		}
+
+		if (in_array('auth:api', $middleware) && $user == null) {
+			return false;
+		}
+
+		if (in_array('admin', $middleware) && $user->role !== 'admin') {
+			return false;
+		}
+
+		return true;
+	})
+	->map(function($route) {
+		return [
+			'methods' => $route->methods,
+			'uri' => $route->uri
+		];
+	})->values()->toArray();
+
     return [
     	'name' => config('api.name'),
     	'url' => config('api.url'),
     	'description' => config('api.description'),
-    	'version' => config('api.version')
+    	'version' => config('api.version'),
+    	'endpoints' => $endpoints,
     ];
 });
