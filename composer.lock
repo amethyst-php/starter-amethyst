@@ -4,88 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c8a1077813e83d432259456ed28b181d",
+    "content-hash": "10ac80936bd0be10c7b0e5167fe0fc46",
     "packages": [
-        {
-            "name": "aws/aws-sdk-php",
-            "version": "3.66.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "eefa7317be6a8aceacf10364ea964e70fc7647f8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/eefa7317be6a8aceacf10364ea964e70fc7647f8",
-                "reference": "eefa7317be6a8aceacf10364ea964e70fc7647f8",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "ext-pcre": "*",
-                "ext-simplexml": "*",
-                "ext-spl": "*",
-                "guzzlehttp/guzzle": "^5.3.1|^6.2.1",
-                "guzzlehttp/promises": "~1.0",
-                "guzzlehttp/psr7": "^1.4.1",
-                "mtdowling/jmespath.php": "~2.2",
-                "php": ">=5.5"
-            },
-            "require-dev": {
-                "andrewsville/php-token-reflection": "^1.4",
-                "aws/aws-php-sns-message-validator": "~1.0",
-                "behat/behat": "~3.0",
-                "doctrine/cache": "~1.4",
-                "ext-dom": "*",
-                "ext-openssl": "*",
-                "nette/neon": "^2.3",
-                "phpunit/phpunit": "^4.8.35|^5.4.3",
-                "psr/cache": "^1.0"
-            },
-            "suggest": {
-                "aws/aws-php-sns-message-validator": "To validate incoming SNS notifications",
-                "doctrine/cache": "To use the DoctrineCacheAdapter",
-                "ext-curl": "To send requests using cURL",
-                "ext-openssl": "Allows working with CloudFront private distributions and verifying received SNS messages"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Aws\\": "src/"
-                },
-                "files": [
-                    "src/functions.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "Amazon Web Services",
-                    "homepage": "http://aws.amazon.com"
-                }
-            ],
-            "description": "AWS SDK for PHP - Use Amazon Web Services in your PHP project",
-            "homepage": "http://aws.amazon.com/sdkforphp",
-            "keywords": [
-                "amazon",
-                "aws",
-                "cloud",
-                "dynamodb",
-                "ec2",
-                "glacier",
-                "s3",
-                "sdk"
-            ],
-            "time": "2018-08-25T00:49:07+00:00"
-        },
         {
             "name": "danielstjules/stringy",
             "version": "3.1.0",
@@ -472,16 +392,16 @@
         },
         {
             "name": "egulias/email-validator",
-            "version": "2.1.5",
+            "version": "2.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/egulias/EmailValidator.git",
-                "reference": "54859fabea8b3beecbb1a282888d5c990036b9e3"
+                "reference": "0578b32b30b22de3e8664f797cf846fc9246f786"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/54859fabea8b3beecbb1a282888d5c990036b9e3",
-                "reference": "54859fabea8b3beecbb1a282888d5c990036b9e3",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/0578b32b30b22de3e8664f797cf846fc9246f786",
+                "reference": "0578b32b30b22de3e8664f797cf846fc9246f786",
                 "shasum": ""
             },
             "require": {
@@ -525,7 +445,7 @@
                 "validation",
                 "validator"
             ],
-            "time": "2018-08-16T20:49:45+00:00"
+            "time": "2018-09-25T20:47:26+00:00"
         },
         {
             "name": "erusev/parsedown",
@@ -672,56 +592,6 @@
             "description": "A simple library to encode and decode JSON Web Tokens (JWT) in PHP. Should conform to the current spec.",
             "homepage": "https://github.com/firebase/php-jwt",
             "time": "2017-06-27T22:17:23+00:00"
-        },
-        {
-            "name": "fzaninotto/faker",
-            "version": "v1.8.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/fzaninotto/Faker.git",
-                "reference": "f72816b43e74063c8b10357394b6bba8cb1c10de"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/f72816b43e74063c8b10357394b6bba8cb1c10de",
-                "reference": "f72816b43e74063c8b10357394b6bba8cb1c10de",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.3.3 || ^7.0"
-            },
-            "require-dev": {
-                "ext-intl": "*",
-                "phpunit/phpunit": "^4.8.35 || ^5.7",
-                "squizlabs/php_codesniffer": "^1.5"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.8-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Faker\\": "src/Faker/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "François Zaninotto"
-                }
-            ],
-            "description": "Faker is a PHP library that generates fake data for you.",
-            "keywords": [
-                "data",
-                "faker",
-                "fixtures"
-            ],
-            "time": "2018-07-12T10:23:15+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -976,32 +846,32 @@
         },
         {
             "name": "jakub-onderka/php-console-color",
-            "version": "0.1",
+            "version": "v0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JakubOnderka/PHP-Console-Color.git",
-                "reference": "e0b393dacf7703fc36a4efc3df1435485197e6c1"
+                "reference": "d5deaecff52a0d61ccb613bb3804088da0307191"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JakubOnderka/PHP-Console-Color/zipball/e0b393dacf7703fc36a4efc3df1435485197e6c1",
-                "reference": "e0b393dacf7703fc36a4efc3df1435485197e6c1",
+                "url": "https://api.github.com/repos/JakubOnderka/PHP-Console-Color/zipball/d5deaecff52a0d61ccb613bb3804088da0307191",
+                "reference": "d5deaecff52a0d61ccb613bb3804088da0307191",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.2"
+                "php": ">=5.4.0"
             },
             "require-dev": {
                 "jakub-onderka/php-code-style": "1.0",
-                "jakub-onderka/php-parallel-lint": "0.*",
+                "jakub-onderka/php-parallel-lint": "1.0",
                 "jakub-onderka/php-var-dump-check": "0.*",
-                "phpunit/phpunit": "3.7.*",
+                "phpunit/phpunit": "~4.3",
                 "squizlabs/php_codesniffer": "1.*"
             },
             "type": "library",
             "autoload": {
-                "psr-0": {
-                    "JakubOnderka\\PhpConsoleColor": "src/"
+                "psr-4": {
+                    "JakubOnderka\\PhpConsoleColor\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1011,11 +881,10 @@
             "authors": [
                 {
                     "name": "Jakub Onderka",
-                    "email": "jakub.onderka@gmail.com",
-                    "homepage": "http://www.acci.cz"
+                    "email": "jakub.onderka@gmail.com"
                 }
             ],
-            "time": "2014-04-08T15:00:19+00:00"
+            "time": "2018-09-29T17:23:10+00:00"
         },
         {
             "name": "jakub-onderka/php-console-highlighter",
@@ -1063,16 +932,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.6.34",
+            "version": "v5.6.39",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "66c9cf8119b422b71273271db1f12e20d74ad49b"
+                "reference": "37bb306f516669ab4f888c16003f694313ab299e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/66c9cf8119b422b71273271db1f12e20d74ad49b",
-                "reference": "66c9cf8119b422b71273271db1f12e20d74ad49b",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/37bb306f516669ab4f888c16003f694313ab299e",
+                "reference": "37bb306f516669ab4f888c16003f694313ab299e",
                 "shasum": ""
             },
             "require": {
@@ -1198,7 +1067,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2018-08-21T13:44:37+00:00"
+            "time": "2018-10-04T14:50:41+00:00"
         },
         {
             "name": "laravel/passport",
@@ -1334,16 +1203,16 @@
         },
         {
             "name": "laravel/tinker",
-            "version": "v1.0.7",
+            "version": "v1.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/tinker.git",
-                "reference": "e3086ee8cb1f54a39ae8dcb72d1c37d10128997d"
+                "reference": "cafbf598a90acde68985660e79b2b03c5609a405"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/tinker/zipball/e3086ee8cb1f54a39ae8dcb72d1c37d10128997d",
-                "reference": "e3086ee8cb1f54a39ae8dcb72d1c37d10128997d",
+                "url": "https://api.github.com/repos/laravel/tinker/zipball/cafbf598a90acde68985660e79b2b03c5609a405",
+                "reference": "cafbf598a90acde68985660e79b2b03c5609a405",
                 "shasum": ""
             },
             "require": {
@@ -1393,7 +1262,7 @@
                 "laravel",
                 "psysh"
             ],
-            "time": "2018-05-17T13:42:07+00:00"
+            "time": "2018-10-12T19:39:35+00:00"
         },
         {
             "name": "laravolt/avatar",
@@ -1570,26 +1439,26 @@
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.46",
+            "version": "1.0.47",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "f3e0d925c18b92cf3ce84ea5cc58d62a1762a2b2"
+                "reference": "a11e4a75f256bdacf99d20780ce42d3b8272975c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/f3e0d925c18b92cf3ce84ea5cc58d62a1762a2b2",
-                "reference": "f3e0d925c18b92cf3ce84ea5cc58d62a1762a2b2",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/a11e4a75f256bdacf99d20780ce42d3b8272975c",
+                "reference": "a11e4a75f256bdacf99d20780ce42d3b8272975c",
                 "shasum": ""
             },
             "require": {
+                "ext-fileinfo": "*",
                 "php": ">=5.5.9"
             },
             "conflict": {
                 "league/flysystem-sftp": "<1.0.6"
             },
             "require-dev": {
-                "ext-fileinfo": "*",
                 "phpspec/phpspec": "^3.4",
                 "phpunit/phpunit": "^5.7.10"
             },
@@ -1650,40 +1519,48 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2018-08-22T07:45:22+00:00"
+            "time": "2018-09-14T15:30:29+00:00"
         },
         {
-            "name": "league/flysystem-aws-s3-v3",
-            "version": "1.0.19",
+            "name": "league/fractal",
+            "version": "0.17.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/thephpleague/flysystem-aws-s3-v3.git",
-                "reference": "f135691ef6761542af301b7c9880f140fb12dc74"
+                "url": "https://github.com/thephpleague/fractal.git",
+                "reference": "a0b350824f22fc2fdde2500ce9d6851a3f275b0e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem-aws-s3-v3/zipball/f135691ef6761542af301b7c9880f140fb12dc74",
-                "reference": "f135691ef6761542af301b7c9880f140fb12dc74",
+                "url": "https://api.github.com/repos/thephpleague/fractal/zipball/a0b350824f22fc2fdde2500ce9d6851a3f275b0e",
+                "reference": "a0b350824f22fc2fdde2500ce9d6851a3f275b0e",
                 "shasum": ""
             },
             "require": {
-                "aws/aws-sdk-php": "^3.0.0",
-                "league/flysystem": "^1.0.40",
-                "php": ">=5.5.0"
+                "php": ">=5.4"
             },
             "require-dev": {
-                "henrikbjorn/phpspec-code-coverage": "~1.0.1",
-                "phpspec/phpspec": "^2.0.0"
+                "doctrine/orm": "^2.5",
+                "illuminate/contracts": "~5.0",
+                "mockery/mockery": "~0.9",
+                "pagerfanta/pagerfanta": "~1.0.0",
+                "phpunit/phpunit": "~4.0",
+                "squizlabs/php_codesniffer": "~1.5",
+                "zendframework/zend-paginator": "~2.3"
+            },
+            "suggest": {
+                "illuminate/pagination": "The Illuminate Pagination component.",
+                "pagerfanta/pagerfanta": "Pagerfanta Paginator",
+                "zendframework/zend-paginator": "Zend Framework Paginator"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0-dev"
+                    "dev-master": "0.13-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "League\\Flysystem\\AwsS3v3\\": "src/"
+                    "League\\Fractal\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1692,12 +1569,21 @@
             ],
             "authors": [
                 {
-                    "name": "Frank de Jonge",
-                    "email": "info@frenky.net"
+                    "name": "Phil Sturgeon",
+                    "email": "me@philsturgeon.uk",
+                    "homepage": "http://philsturgeon.uk/",
+                    "role": "Developer"
                 }
             ],
-            "description": "Flysystem adapter for the AWS S3 SDK v3.x",
-            "time": "2018-03-27T20:33:59+00:00"
+            "description": "Handle the output of complex data structures ready for API output.",
+            "homepage": "http://fractal.thephpleague.com/",
+            "keywords": [
+                "api",
+                "json",
+                "league",
+                "rest"
+            ],
+            "time": "2017-06-12T11:04:56+00:00"
         },
         {
             "name": "league/glide",
@@ -2084,61 +1970,6 @@
             "time": "2017-06-19T01:22:40+00:00"
         },
         {
-            "name": "mtdowling/jmespath.php",
-            "version": "2.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/jmespath/jmespath.php.git",
-                "reference": "adcc9531682cf87dfda21e1fd5d0e7a41d292fac"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/jmespath/jmespath.php/zipball/adcc9531682cf87dfda21e1fd5d0e7a41d292fac",
-                "reference": "adcc9531682cf87dfda21e1fd5d0e7a41d292fac",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.0"
-            },
-            "bin": [
-                "bin/jp.php"
-            ],
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "JmesPath\\": "src/"
-                },
-                "files": [
-                    "src/JmesPath.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Michael Dowling",
-                    "email": "mtdowling@gmail.com",
-                    "homepage": "https://github.com/mtdowling"
-                }
-            ],
-            "description": "Declaratively specify how to extract elements from a JSON document",
-            "keywords": [
-                "json",
-                "jsonpath"
-            ],
-            "time": "2016-12-03T22:08:25+00:00"
-        },
-        {
             "name": "nesbot/carbon",
             "version": "1.25.0",
             "source": {
@@ -2193,16 +2024,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.0.3",
+            "version": "v4.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "bd088dc940a418f09cda079a9b5c7c478890fb8d"
+                "reference": "d0230c5c77a7e3cfa69446febf340978540958c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/bd088dc940a418f09cda079a9b5c7c478890fb8d",
-                "reference": "bd088dc940a418f09cda079a9b5c7c478890fb8d",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/d0230c5c77a7e3cfa69446febf340978540958c0",
+                "reference": "d0230c5c77a7e3cfa69446febf340978540958c0",
                 "shasum": ""
             },
             "require": {
@@ -2218,7 +2049,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.0-dev"
+                    "dev-master": "4.1-dev"
                 }
             },
             "autoload": {
@@ -2240,7 +2071,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2018-07-15T17:25:16+00:00"
+            "time": "2018-10-10T09:24:14+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -2756,16 +2587,16 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.9.7",
+            "version": "v0.9.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "4f5b6c090948773a8bfeea6a0f07ab7d0b24e932"
+                "reference": "ed3c32c4304e1a678a6e0f9dc11dd2d927d89555"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/4f5b6c090948773a8bfeea6a0f07ab7d0b24e932",
-                "reference": "4f5b6c090948773a8bfeea6a0f07ab7d0b24e932",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/ed3c32c4304e1a678a6e0f9dc11dd2d927d89555",
+                "reference": "ed3c32c4304e1a678a6e0f9dc11dd2d927d89555",
                 "shasum": ""
             },
             "require": {
@@ -2826,7 +2657,908 @@
                 "interactive",
                 "shell"
             ],
-            "time": "2018-08-11T15:54:43+00:00"
+            "time": "2018-09-05T11:40:09+00:00"
+        },
+        {
+            "name": "railken/amethyst-account",
+            "version": "v0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/railken/amethyst-account.git",
+                "reference": "a9871cf9e1512895e6db2845c725a94ba719852c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/railken/amethyst-account/zipball/a9871cf9e1512895e6db2845c725a94ba719852c",
+                "reference": "a9871cf9e1512895e6db2845c725a94ba719852c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "railken/amethyst-authentication": "0.1.*",
+                "railken/amethyst-common": "0.1.*"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.8.1",
+                "orchestra/testbench": "3.6.*",
+                "phpstan/phpstan": "^0.10",
+                "phpunit/phpunit": "~7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Railken\\Amethyst\\Providers\\AccountServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Railken\\Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "account",
+                "amethyst",
+                "amethyst-account",
+                "laravel"
+            ],
+            "time": "2018-10-12T23:55:19+00:00"
+        },
+        {
+            "name": "railken/amethyst-api",
+            "version": "v0.1.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/railken/amethyst-api.git",
+                "reference": "e91817e33c5d49b0ed578be9aab84b477eceaeb2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/railken/amethyst-api/zipball/e91817e33c5d49b0ed578be9aab84b477eceaeb2",
+                "reference": "e91817e33c5d49b0ed578be9aab84b477eceaeb2",
+                "shasum": ""
+            },
+            "require": {
+                "league/fractal": "^0.17.0",
+                "php": ">=7.1",
+                "railken/bag": "^1.2",
+                "railken/lara-eye": "1.2.*",
+                "railken/lem": "3.2.*"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.8",
+                "orchestra/testbench": "~3.6",
+                "phpstan/phpstan": "^0.10",
+                "phpunit/phpunit": "~7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Railken\\Amethyst\\Providers\\ApiServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Railken\\Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "laravel"
+            ],
+            "time": "2018-10-08T10:08:01+00:00"
+        },
+        {
+            "name": "railken/amethyst-authentication",
+            "version": "v0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/railken/amethyst-authentication.git",
+                "reference": "a1c3678aa2d71561b09ca447037c4c3f608215bd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/railken/amethyst-authentication/zipball/a1c3678aa2d71561b09ca447037c4c3f608215bd",
+                "reference": "a1c3678aa2d71561b09ca447037c4c3f608215bd",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/passport": "^6.0",
+                "laravel/socialite": "^3.0",
+                "php": ">=7.1",
+                "railken/amethyst-common": "0.1.*",
+                "railken/amethyst-user": "0.1.*"
+            },
+            "require-dev": {
+                "donatj/mock-webserver": "^2.0",
+                "duncan3dc/dusk": "^0.8.0",
+                "friendsofphp/php-cs-fixer": "^2.8.1",
+                "orchestra/testbench": "3.6.*",
+                "phpstan/phpstan": "^0.10",
+                "phpunit/phpunit": "~7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Railken\\Amethyst\\Providers\\AuthenticationServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Railken\\Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-authentication",
+                "auth",
+                "laravel"
+            ],
+            "time": "2018-10-12T23:01:58+00:00"
+        },
+        {
+            "name": "railken/amethyst-common",
+            "version": "v0.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/railken/amethyst-common.git",
+                "reference": "76db32ab392743b1f290c39bed3e7ed8671f22e8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/railken/amethyst-common/zipball/76db32ab392743b1f290c39bed3e7ed8671f22e8",
+                "reference": "76db32ab392743b1f290c39bed3e7ed8671f22e8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "railken/amethyst-api": "0.1.*",
+                "railken/bag": "^1.2",
+                "railken/lem": "^3.2"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.8",
+                "orchestra/testbench": "3.6.*",
+                "phpstan/phpstan": "^0.10",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Railken\\Amethyst\\Common\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "laravel"
+            ],
+            "time": "2018-10-08T09:45:20+00:00"
+        },
+        {
+            "name": "railken/amethyst-config",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/railken/amethyst-config.git",
+                "reference": "3531107472c45f637da03f7dd1d7493667efde42"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/railken/amethyst-config/zipball/3531107472c45f637da03f7dd1d7493667efde42",
+                "reference": "3531107472c45f637da03f7dd1d7493667efde42",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "railken/amethyst-common": "^0.1"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.8.1",
+                "orchestra/testbench": "~3.6",
+                "phpstan/phpstan": "^0.10",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Railken\\Amethyst\\Providers\\ConfigServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Railken\\Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Amethyst package",
+            "keywords": [
+                "amethyst",
+                "amethyst-config",
+                "config",
+                "laravel"
+            ],
+            "time": "2018-10-01T02:29:45+00:00"
+        },
+        {
+            "name": "railken/amethyst-custom-page",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/railken/amethyst-custom-page.git",
+                "reference": "50e3ec12d22b4b26dd17dd4042edb44e64f600ce"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/railken/amethyst-custom-page/zipball/50e3ec12d22b4b26dd17dd4042edb44e64f600ce",
+                "reference": "50e3ec12d22b4b26dd17dd4042edb44e64f600ce",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "railken/amethyst-common": "0.1.*"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.8.1",
+                "orchestra/testbench": "~3.6",
+                "phpstan/phpstan": "^0.10",
+                "phpunit/phpunit": "~7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Railken\\Amethyst\\Providers\\CustomPageServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Railken\\Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-custom-page",
+                "custom-page",
+                "laravel"
+            ],
+            "time": "2018-09-30T15:03:21+00:00"
+        },
+        {
+            "name": "railken/amethyst-data-builder",
+            "version": "v0.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/railken/amethyst-data-builder.git",
+                "reference": "8a7ad9b5abd0c86f43b177181c0335b263426cab"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/railken/amethyst-data-builder/zipball/8a7ad9b5abd0c86f43b177181c0335b263426cab",
+                "reference": "8a7ad9b5abd0c86f43b177181c0335b263426cab",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "railken/amethyst-common": "0.1.*",
+                "railken/template": "^1.0.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.8.1",
+                "orchestra/testbench": "3.6.*",
+                "phpstan/phpstan": "^0.10",
+                "phpunit/phpunit": "~7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Railken\\Amethyst\\Providers\\DataBuilderServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Railken\\Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-data-builder",
+                "data-builder",
+                "laravel"
+            ],
+            "time": "2018-10-10T21:01:53+00:00"
+        },
+        {
+            "name": "railken/amethyst-email-log",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/railken/amethyst-email-log.git",
+                "reference": "3f0bf5e6c6784c4d820279355714fcbb0dd54362"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/railken/amethyst-email-log/zipball/3f0bf5e6c6784c4d820279355714fcbb0dd54362",
+                "reference": "3f0bf5e6c6784c4d820279355714fcbb0dd54362",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "railken/amethyst-common": "0.1.*"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.8.1",
+                "orchestra/testbench": "3.6.*",
+                "phpstan/phpstan": "^0.10",
+                "phpunit/phpunit": "~7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Railken\\Amethyst\\Providers\\EmailLogServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Railken\\Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-email-log",
+                "email-log",
+                "laravel"
+            ],
+            "time": "2018-09-30T21:45:39+00:00"
+        },
+        {
+            "name": "railken/amethyst-email-sender",
+            "version": "v0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/railken/amethyst-email-sender.git",
+                "reference": "2517c33177823ed63191641ffcd9ed8ed17647d1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/railken/amethyst-email-sender/zipball/2517c33177823ed63191641ffcd9ed8ed17647d1",
+                "reference": "2517c33177823ed63191641ffcd9ed8ed17647d1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "railken/amethyst-common": "0.1.*",
+                "railken/amethyst-data-builder": "0.1.*",
+                "railken/amethyst-file": "0.1.*",
+                "railken/amethyst-template": "0.1.*"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.8.1",
+                "orchestra/testbench": "3.6.*",
+                "phpstan/phpstan": "^0.10",
+                "phpunit/phpunit": "~7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Railken\\Amethyst\\Providers\\EmailSenderServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Railken\\Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-email-sender",
+                "email-sender",
+                "laravel"
+            ],
+            "time": "2018-10-01T23:05:36+00:00"
+        },
+        {
+            "name": "railken/amethyst-exporter",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/railken/amethyst-exporter.git",
+                "reference": "ee61274299d9a0e8d6ba51e4e47a3c36be9f1205"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/railken/amethyst-exporter/zipball/ee61274299d9a0e8d6ba51e4e47a3c36be9f1205",
+                "reference": "ee61274299d9a0e8d6ba51e4e47a3c36be9f1205",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "railken/amethyst-common": "0.1.*",
+                "railken/amethyst-data-builder": "0.1.*",
+                "railken/amethyst-file": "0.1.*",
+                "railken/template": "1.0.*"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.8.1",
+                "orchestra/testbench": "3.6.*",
+                "phpstan/phpstan": "^0.10",
+                "phpunit/phpunit": "~7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Railken\\Amethyst\\Providers\\ExporterServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Railken\\Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-exporter",
+                "exporter",
+                "laravel"
+            ],
+            "time": "2018-10-01T19:38:03+00:00"
+        },
+        {
+            "name": "railken/amethyst-file",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/railken/amethyst-file.git",
+                "reference": "4a0a4c1e9f6f52fcf44b3f7206fb895d7cc0fa0e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/railken/amethyst-file/zipball/4a0a4c1e9f6f52fcf44b3f7206fb895d7cc0fa0e",
+                "reference": "4a0a4c1e9f6f52fcf44b3f7206fb895d7cc0fa0e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "railken/amethyst-common": "0.1.*",
+                "spatie/laravel-medialibrary": "^7.0.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.8.1",
+                "orchestra/testbench": "3.6.*",
+                "phpstan/phpstan": "^0.10",
+                "phpunit/phpunit": "~7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Railken\\Amethyst\\Providers\\FileServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Railken\\Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-file",
+                "file",
+                "laravel"
+            ],
+            "time": "2018-09-30T22:35:57+00:00"
+        },
+        {
+            "name": "railken/amethyst-file-generator",
+            "version": "v0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/railken/amethyst-file-generator.git",
+                "reference": "8ab0fa80c318df5d2af213defd2c765bbb4cb94b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/railken/amethyst-file-generator/zipball/8ab0fa80c318df5d2af213defd2c765bbb4cb94b",
+                "reference": "8ab0fa80c318df5d2af213defd2c765bbb4cb94b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "railken/amethyst-common": "0.1.*",
+                "railken/amethyst-data-builder": "0.1.*",
+                "railken/amethyst-file": "0.1.*",
+                "railken/amethyst-template": "0.1.*"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.8.1",
+                "orchestra/testbench": "3.6.*",
+                "phpstan/phpstan": "^0.10",
+                "phpunit/phpunit": "~7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Railken\\Amethyst\\Providers\\FileGeneratorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Railken\\Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-file-generator",
+                "file-generator",
+                "laravel"
+            ],
+            "time": "2018-10-01T15:22:59+00:00"
+        },
+        {
+            "name": "railken/amethyst-listener",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/railken/amethyst-listener.git",
+                "reference": "33fba1d7b944e6c50867cb8ca6abb1511257da22"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/railken/amethyst-listener/zipball/33fba1d7b944e6c50867cb8ca6abb1511257da22",
+                "reference": "33fba1d7b944e6c50867cb8ca6abb1511257da22",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "railken/amethyst-common": "0.1.*",
+                "railken/amethyst-work": "0.1.*"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.8.1",
+                "orchestra/testbench": "3.6.*",
+                "phpstan/phpstan": "^0.10",
+                "phpunit/phpunit": "~7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Railken\\Amethyst\\Providers\\ListenerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Railken\\Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-listener",
+                "laravel",
+                "listener"
+            ],
+            "time": "2018-09-30T23:53:50+00:00"
+        },
+        {
+            "name": "railken/amethyst-notification",
+            "version": "v0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/railken/amethyst-notification.git",
+                "reference": "ec98339ea8bf63b2f855cd63fb274868bd65184b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/railken/amethyst-notification/zipball/ec98339ea8bf63b2f855cd63fb274868bd65184b",
+                "reference": "ec98339ea8bf63b2f855cd63fb274868bd65184b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "railken/amethyst-common": "0.1.*",
+                "railken/amethyst-user": "0.1.*"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.8.1",
+                "orchestra/testbench": "3.6.*",
+                "phpstan/phpstan": "^0.10",
+                "phpunit/phpunit": "~7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Railken\\Amethyst\\Providers\\NotificationServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Railken\\Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-notification",
+                "laravel",
+                "notification"
+            ],
+            "time": "2018-10-09T10:09:30+00:00"
+        },
+        {
+            "name": "railken/amethyst-schedule",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/railken/amethyst-schedule.git",
+                "reference": "862f5b2f3130757dba1102c042666bc5fad876a9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/railken/amethyst-schedule/zipball/862f5b2f3130757dba1102c042666bc5fad876a9",
+                "reference": "862f5b2f3130757dba1102c042666bc5fad876a9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "railken/amethyst-common": "0.1.*",
+                "railken/amethyst-work": "0.1.*"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.8.1",
+                "orchestra/testbench": "3.6.*",
+                "phpstan/phpstan": "^0.10",
+                "phpunit/phpunit": "~7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Railken\\Amethyst\\Providers\\ScheduleServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Railken\\Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-schedule",
+                "laravel",
+                "schedule"
+            ],
+            "time": "2018-10-01T22:21:36+00:00"
+        },
+        {
+            "name": "railken/amethyst-template",
+            "version": "v0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/railken/amethyst-template.git",
+                "reference": "1a9a888902ad3132b0a6da9f3d3c1645e48df40a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/railken/amethyst-template/zipball/1a9a888902ad3132b0a6da9f3d3c1645e48df40a",
+                "reference": "1a9a888902ad3132b0a6da9f3d3c1645e48df40a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "railken/amethyst-common": "0.1.*",
+                "railken/amethyst-data-builder": "0.1.*"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.8.1",
+                "orchestra/testbench": "3.6.*",
+                "phpstan/phpstan": "^0.10",
+                "phpunit/phpunit": "~7.1",
+                "spatie/pdf-to-text": "^1.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Railken\\Amethyst\\Providers\\TemplateServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Railken\\Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-template",
+                "laravel",
+                "template"
+            ],
+            "time": "2018-10-10T11:59:08+00:00"
+        },
+        {
+            "name": "railken/amethyst-user",
+            "version": "v0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/railken/amethyst-user.git",
+                "reference": "37e8c6f6485df03e3d85ea680f899af50c9f17a3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/railken/amethyst-user/zipball/37e8c6f6485df03e3d85ea680f899af50c9f17a3",
+                "reference": "37e8c6f6485df03e3d85ea680f899af50c9f17a3",
+                "shasum": ""
+            },
+            "require": {
+                "laravolt/avatar": "^2.0",
+                "php": ">=7.1",
+                "railken/amethyst-common": "0.1.*"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.8.1",
+                "orchestra/testbench": "~3.6",
+                "phpstan/phpstan": "^0.10",
+                "phpunit/phpunit": "~7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Railken\\Amethyst\\Providers\\UserServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Railken\\Amethyst\\": "src/",
+                    "Railken\\Amethyst\\Database\\Seeds\\": "database/seeds/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-user",
+                "laravel",
+                "user"
+            ],
+            "time": "2018-09-30T21:02:21+00:00"
+        },
+        {
+            "name": "railken/amethyst-work",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/railken/amethyst-work.git",
+                "reference": "e71d5c76a01f3d802bea1f585ef711978024ec5e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/railken/amethyst-work/zipball/e71d5c76a01f3d802bea1f585ef711978024ec5e",
+                "reference": "e71d5c76a01f3d802bea1f585ef711978024ec5e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "railken/amethyst-common": "0.1.*",
+                "railken/amethyst-email-sender": "0.1.*",
+                "railken/amethyst-file-generator": "0.1.*"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.8.1",
+                "orchestra/testbench": "3.6.*",
+                "phpstan/phpstan": "^0.10",
+                "phpunit/phpunit": "~7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Railken\\Amethyst\\Providers\\WorkServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Railken\\Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-work",
+                "laravel",
+                "work"
+            ],
+            "time": "2018-09-30T23:38:05+00:00"
         },
         {
             "name": "railken/bag",
@@ -2859,29 +3591,29 @@
         },
         {
             "name": "railken/lara-eye",
-            "version": "v1.1.1",
+            "version": "v1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/railken/lara-eye.git",
-                "reference": "510c2992ac28cf041d27aa845e55e717fded4e31"
+                "reference": "51f782381d7a4f67c6de30c3a5b212ba9232e892"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/railken/lara-eye/zipball/510c2992ac28cf041d27aa845e55e717fded4e31",
-                "reference": "510c2992ac28cf041d27aa845e55e717fded4e31",
+                "url": "https://api.github.com/repos/railken/lara-eye/zipball/51f782381d7a4f67c6de30c3a5b212ba9232e892",
+                "reference": "51f782381d7a4f67c6de30c3a5b212ba9232e892",
                 "shasum": ""
             },
             "require": {
-                "illuminate/database": "^5.4",
+                "illuminate/database": "5.6.*",
                 "php": ">=7.1",
                 "railken/bag": "^1.2",
-                "railken/search-query": "^2.2"
+                "railken/search-query": "^2.2.1"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^2.8.1",
-                "orchestra/testbench": "~3.6",
+                "orchestra/testbench": "3.6.*",
                 "phpstan/phpstan": "^0.10",
-                "phpunit/phpunit": "~7.0"
+                "phpunit/phpunit": "^7.1"
             },
             "type": "library",
             "autoload": {
@@ -2896,810 +3628,20 @@
             "keywords": [
                 "api"
             ],
-            "time": "2018-08-02T19:35:24+00:00"
+            "time": "2018-10-04T09:24:54+00:00"
         },
         {
-            "name": "railken/lara-ore-account",
-            "version": "dev-master",
+            "name": "railken/lem",
+            "version": "v3.2.16",
             "source": {
                 "type": "git",
-                "url": "https://github.com/railken/lara-ore-account.git",
-                "reference": "0252d1ce0eb3479ab3b67c7df60f0e5f740f4615"
+                "url": "https://github.com/railken/lem.git",
+                "reference": "47727feaafde2fea097eb33c6a656b097d1deef6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/railken/lara-ore-account/zipball/0252d1ce0eb3479ab3b67c7df60f0e5f740f4615",
-                "reference": "0252d1ce0eb3479ab3b67c7df60f0e5f740f4615",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1",
-                "railken/lara-ore-api": "dev-master",
-                "railken/lara-ore-auth": "dev-master",
-                "railken/lara-ore-support": "dev-master",
-                "railken/lara-ore-user": "dev-master"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.8.1",
-                "orchestra/testbench": "~3.6",
-                "phpstan/phpstan": "^0.9.2",
-                "phpunit/phpunit": "~7.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Railken\\LaraOre\\AccountServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\LaraOre\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "account",
-                "lara-ore",
-                "lara-ore-account",
-                "laravel"
-            ],
-            "time": "2018-07-23T20:16:48+00:00"
-        },
-        {
-            "name": "railken/lara-ore-api",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/lara-ore-api.git",
-                "reference": "c6513d0555c0556a61a6c0948a68ab212037077e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/lara-ore-api/zipball/c6513d0555c0556a61a6c0948a68ab212037077e",
-                "reference": "c6513d0555c0556a61a6c0948a68ab212037077e",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1",
-                "railken/bag": "^1.2",
-                "railken/lara-eye": "^1.1",
-                "railken/laravel-manager": "^3.1"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.8",
-                "orchestra/testbench": "~3.6",
-                "phpstan/phpstan": "^0.10",
-                "phpunit/phpunit": "~7.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Railken\\LaraOre\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "laravel"
-            ],
-            "time": "2018-07-23T14:26:43+00:00"
-        },
-        {
-            "name": "railken/lara-ore-auth",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/lara-ore-auth.git",
-                "reference": "f2cce7fe759e5ba4d02bf1f662d24e1a1cf63a54"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/lara-ore-auth/zipball/f2cce7fe759e5ba4d02bf1f662d24e1a1cf63a54",
-                "reference": "f2cce7fe759e5ba4d02bf1f662d24e1a1cf63a54",
-                "shasum": ""
-            },
-            "require": {
-                "laravel/passport": "^6.0",
-                "laravel/socialite": "^3.0",
-                "php": ">=7.1",
-                "railken/lara-ore-api": "dev-master",
-                "railken/lara-ore-support": "dev-master",
-                "railken/lara-ore-user": "dev-master"
-            },
-            "require-dev": {
-                "donatj/mock-webserver": "^2.0",
-                "duncan3dc/dusk": "^0.8.0",
-                "friendsofphp/php-cs-fixer": "^2.8.1",
-                "orchestra/testbench": "~3.6",
-                "phpstan/phpstan": "^0.9.2",
-                "phpunit/phpunit": "~7.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Railken\\LaraOre\\AuthServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\LaraOre\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "auth",
-                "lara-ore",
-                "lara-ore-auth",
-                "laravel"
-            ],
-            "time": "2018-07-23T14:32:27+00:00"
-        },
-        {
-            "name": "railken/lara-ore-config",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/lara-ore-config.git",
-                "reference": "53c17d03dc488b3a167793b9e6242d350428e918"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/lara-ore-config/zipball/53c17d03dc488b3a167793b9e6242d350428e918",
-                "reference": "53c17d03dc488b3a167793b9e6242d350428e918",
-                "shasum": ""
-            },
-            "require": {
-                "fzaninotto/faker": "^1.7",
-                "php": ">=7.1",
-                "railken/bag": "^1.2",
-                "railken/lara-ore-api": "dev-master",
-                "railken/lara-ore-support": "dev-master",
-                "railken/laravel-manager": "^3.0.3"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.8.1",
-                "orchestra/testbench": "~3.6",
-                "phpstan/phpstan": "^0.10",
-                "phpunit/phpunit": "~7.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Railken\\LaraOre\\ConfigServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\LaraOre\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "A lara-ore package",
-            "keywords": [
-                "config",
-                "lara-ore",
-                "lara-ore-config",
-                "laravel"
-            ],
-            "time": "2018-08-22T09:51:31+00:00"
-        },
-        {
-            "name": "railken/lara-ore-data-builder",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/lara-ore-data-builder.git",
-                "reference": "b0c2a7fde5837f25d00bdd3a7fb106f4825e670c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/lara-ore-data-builder/zipball/b0c2a7fde5837f25d00bdd3a7fb106f4825e670c",
-                "reference": "b0c2a7fde5837f25d00bdd3a7fb106f4825e670c",
-                "shasum": ""
-            },
-            "require": {
-                "fzaninotto/faker": "^1.7",
-                "php": ">=7.1",
-                "railken/bag": "^1.2",
-                "railken/lara-ore-api": "dev-master",
-                "railken/lara-ore-repository": "dev-master",
-                "railken/lara-ore-support": "dev-master",
-                "railken/lara-ore-template": "dev-master",
-                "railken/laravel-manager": "^3.0.3"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.8.1",
-                "orchestra/testbench": "~3.6",
-                "phpstan/phpstan": "^0.10",
-                "phpunit/phpunit": "~7.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Railken\\LaraOre\\DataBuilderServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\LaraOre\\DataBuilder\\Database\\Seeds\\": "database/seeds/",
-                    "Railken\\LaraOre\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "data-builder",
-                "lara-ore",
-                "lara-ore-data-builder",
-                "laravel"
-            ],
-            "time": "2018-07-25T23:27:49+00:00"
-        },
-        {
-            "name": "railken/lara-ore-disk",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/lara-ore-disk.git",
-                "reference": "639729a9187eb09d47c481a8d40e3a2e4b17970f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/lara-ore-disk/zipball/639729a9187eb09d47c481a8d40e3a2e4b17970f",
-                "reference": "639729a9187eb09d47c481a8d40e3a2e4b17970f",
-                "shasum": ""
-            },
-            "require": {
-                "league/flysystem-aws-s3-v3": "^1.0",
-                "php": ">=7.1",
-                "railken/bag": "^1.2",
-                "railken/lara-ore-api": "dev-master",
-                "railken/lara-ore-support": "dev-master",
-                "railken/lara-ore-user": "dev-master",
-                "railken/laravel-manager": "^3.0.3"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.8.1",
-                "orchestra/testbench": "~3.6",
-                "phpstan/phpstan": "^0.9.2",
-                "phpunit/phpunit": "~7.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Railken\\LaraOre\\DiskServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\LaraOre\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "lara-ore"
-            ],
-            "time": "2018-07-23T14:39:28+00:00"
-        },
-        {
-            "name": "railken/lara-ore-email-sender",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/lara-ore-email-sender.git",
-                "reference": "f3eef50c7d617998c0b6bc193507850ba06c93e0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/lara-ore-email-sender/zipball/f3eef50c7d617998c0b6bc193507850ba06c93e0",
-                "reference": "f3eef50c7d617998c0b6bc193507850ba06c93e0",
-                "shasum": ""
-            },
-            "require": {
-                "fzaninotto/faker": "^1.7",
-                "php": ">=7.1",
-                "railken/bag": "^1.2",
-                "railken/lara-ore-api": "dev-master",
-                "railken/lara-ore-data-builder": "dev-master",
-                "railken/lara-ore-file": "dev-master",
-                "railken/lara-ore-repository": "dev-master",
-                "railken/lara-ore-support": "dev-master",
-                "railken/lara-ore-template": "dev-master",
-                "railken/laravel-manager": "^3.0.3"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.8.1",
-                "orchestra/testbench": "~3.6",
-                "phpstan/phpstan": "^0.10",
-                "phpunit/phpunit": "~7.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Railken\\LaraOre\\EmailSenderServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\LaraOre\\EmailSender\\Database\\Seeds\\": "database/seeds/",
-                    "Railken\\LaraOre\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "email-sender",
-                "lara-ore",
-                "lara-ore-email-sender",
-                "laravel"
-            ],
-            "time": "2018-08-23T16:32:18+00:00"
-        },
-        {
-            "name": "railken/lara-ore-exporter",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/lara-ore-exporter.git",
-                "reference": "a09caf911566cb156ee48be5d8d4e6e408cb7027"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/lara-ore-exporter/zipball/a09caf911566cb156ee48be5d8d4e6e408cb7027",
-                "reference": "a09caf911566cb156ee48be5d8d4e6e408cb7027",
-                "shasum": ""
-            },
-            "require": {
-                "fzaninotto/faker": "^1.7",
-                "php": ">=7.1",
-                "railken/bag": "^1.2",
-                "railken/lara-ore-api": "dev-master",
-                "railken/lara-ore-file": "dev-master",
-                "railken/lara-ore-repository": "dev-master",
-                "railken/lara-ore-support": "dev-master",
-                "railken/lara-ore-template": "dev-master",
-                "railken/laravel-manager": "^3.0.3"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.8.1",
-                "orchestra/testbench": "~3.6",
-                "phpstan/phpstan": "^0.10",
-                "phpunit/phpunit": "~7.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Railken\\LaraOre\\ExporterServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\LaraOre\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "exporter",
-                "lara-ore",
-                "lara-ore-exporter",
-                "laravel"
-            ],
-            "time": "2018-07-23T14:02:47+00:00"
-        },
-        {
-            "name": "railken/lara-ore-file",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/lara-ore-file.git",
-                "reference": "2b7954fec370c5f553a023718d3a3e710dcd85c3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/lara-ore-file/zipball/2b7954fec370c5f553a023718d3a3e710dcd85c3",
-                "reference": "2b7954fec370c5f553a023718d3a3e710dcd85c3",
-                "shasum": ""
-            },
-            "require": {
-                "fzaninotto/faker": "^1.7",
-                "php": ">=7.1",
-                "railken/bag": "^1.2",
-                "railken/lara-ore-api": "dev-master",
-                "railken/lara-ore-support": "dev-master",
-                "railken/laravel-manager": "^3.1",
-                "spatie/laravel-medialibrary": "^7.0.0"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.8.1",
-                "orchestra/testbench": "~3.6",
-                "phpstan/phpstan": "^0.10",
-                "phpunit/phpunit": "~7.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Railken\\LaraOre\\FileServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\LaraOre\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "api"
-            ],
-            "time": "2018-07-23T13:49:23+00:00"
-        },
-        {
-            "name": "railken/lara-ore-file-generator",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/lara-ore-file-generator.git",
-                "reference": "20d4717518558962ff419da180c01f1ed55a3793"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/lara-ore-file-generator/zipball/20d4717518558962ff419da180c01f1ed55a3793",
-                "reference": "20d4717518558962ff419da180c01f1ed55a3793",
-                "shasum": ""
-            },
-            "require": {
-                "fzaninotto/faker": "^1.7",
-                "php": ">=7.1",
-                "railken/bag": "^1.2",
-                "railken/lara-ore-api": "dev-master",
-                "railken/lara-ore-data-builder": "dev-master",
-                "railken/lara-ore-file": "dev-master",
-                "railken/lara-ore-repository": "dev-master",
-                "railken/lara-ore-support": "dev-master",
-                "railken/lara-ore-template": "dev-master",
-                "railken/laravel-manager": "^3.0.3"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.8.1",
-                "orchestra/testbench": "~3.6",
-                "phpstan/phpstan": "^0.10",
-                "phpunit/phpunit": "~7.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Railken\\LaraOre\\FileGeneratorServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\LaraOre\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "A lara-ore package",
-            "keywords": [
-                "file-generator",
-                "lara-ore",
-                "lara-ore-file-generator",
-                "laravel"
-            ],
-            "time": "2018-08-23T16:31:16+00:00"
-        },
-        {
-            "name": "railken/lara-ore-notification",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/lara-ore-notification.git",
-                "reference": "1fb3345a9a0587eeb47c4cefc4c93006c8ef0e07"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/lara-ore-notification/zipball/1fb3345a9a0587eeb47c4cefc4c93006c8ef0e07",
-                "reference": "1fb3345a9a0587eeb47c4cefc4c93006c8ef0e07",
-                "shasum": ""
-            },
-            "require": {
-                "fzaninotto/faker": "^1.7",
-                "php": ">=7.1",
-                "railken/bag": "^1.2",
-                "railken/lara-ore-api": "dev-master",
-                "railken/lara-ore-support": "dev-master",
-                "railken/lara-ore-user": "dev-master",
-                "railken/laravel-manager": "^3.0.3"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.8.1",
-                "orchestra/testbench": "~3.6",
-                "phpstan/phpstan": "^0.10",
-                "phpunit/phpunit": "~7.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Railken\\LaraOre\\NotificationServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\LaraOre\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "lara-ore",
-                "lara-ore-notification",
-                "laravel",
-                "notification"
-            ],
-            "time": "2018-07-23T16:31:46+00:00"
-        },
-        {
-            "name": "railken/lara-ore-repository",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/lara-ore-repository.git",
-                "reference": "8295553e23746648b986bb535d65f5f559943691"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/lara-ore-repository/zipball/8295553e23746648b986bb535d65f5f559943691",
-                "reference": "8295553e23746648b986bb535d65f5f559943691",
-                "shasum": ""
-            },
-            "require": {
-                "fzaninotto/faker": "^1.7",
-                "php": ">=7.1",
-                "railken/bag": "^1.2",
-                "railken/lara-ore-api": "dev-master",
-                "railken/lara-ore-support": "dev-master",
-                "railken/lara-ore-template": "dev-master",
-                "railken/laravel-manager": "^3.0.3"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.8.1",
-                "orchestra/testbench": "~3.6",
-                "phpstan/phpstan": "^0.10",
-                "phpunit/phpunit": "~7.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Railken\\LaraOre\\RepositoryServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\LaraOre\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "lara-ore",
-                "lara-ore-repository",
-                "laravel",
-                "repository"
-            ],
-            "time": "2018-07-25T20:44:32+00:00"
-        },
-        {
-            "name": "railken/lara-ore-support",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/lara-ore-support.git",
-                "reference": "3d48e58ce6b3fca3e7531a6410eed826866678c2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/lara-ore-support/zipball/3d48e58ce6b3fca3e7531a6410eed826866678c2",
-                "reference": "3d48e58ce6b3fca3e7531a6410eed826866678c2",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1",
-                "railken/bag": "^1.2",
-                "railken/laravel-manager": "^3.1"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.8",
-                "orchestra/testbench": "~3.6",
-                "phpstan/phpstan": "^0.9",
-                "phpunit/phpunit": "~7.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Railken\\LaraOre\\Support\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "laravel"
-            ],
-            "time": "2018-06-28T17:03:32+00:00"
-        },
-        {
-            "name": "railken/lara-ore-template",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/lara-ore-template.git",
-                "reference": "c6a46f8cd360b8bb34ff3efab85f412a89c8f32e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/lara-ore-template/zipball/c6a46f8cd360b8bb34ff3efab85f412a89c8f32e",
-                "reference": "c6a46f8cd360b8bb34ff3efab85f412a89c8f32e",
-                "shasum": ""
-            },
-            "require": {
-                "dompdf/dompdf": "^0.8.2",
-                "fzaninotto/faker": "^1.7",
-                "mewesk/twig-excel-bundle": "^2.1",
-                "php": ">=7.1",
-                "railken/bag": "^1.2",
-                "railken/lara-ore-api": "dev-master",
-                "railken/lara-ore-support": "dev-master",
-                "railken/laravel-manager": "^3.1",
-                "rcrowe/twigbridge": "^0.9.6"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.8.1",
-                "orchestra/testbench": "~3.6",
-                "phpstan/phpstan": "^0.10",
-                "phpunit/phpunit": "~7.0",
-                "spatie/pdf-to-text": "^1.1"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Railken\\LaraOre\\TemplateServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\LaraOre\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "lara-ore"
-            ],
-            "time": "2018-07-23T13:48:17+00:00"
-        },
-        {
-            "name": "railken/lara-ore-user",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/lara-ore-user.git",
-                "reference": "c1cec2dcdb055972cbc41e92a3f0ef17d812a28a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/lara-ore-user/zipball/c1cec2dcdb055972cbc41e92a3f0ef17d812a28a",
-                "reference": "c1cec2dcdb055972cbc41e92a3f0ef17d812a28a",
-                "shasum": ""
-            },
-            "require": {
-                "fzaninotto/faker": "^1.7",
-                "laravolt/avatar": "^2.0",
-                "php": ">=7.1",
-                "railken/bag": "^1.2",
-                "railken/lara-ore-api": "dev-master",
-                "railken/lara-ore-support": "dev-master",
-                "railken/laravel-manager": "^3.1",
-                "zizaco/entrust": "^1.9"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.8.1",
-                "orchestra/testbench": "~3.6",
-                "phpstan/phpstan": "^0.10",
-                "phpunit/phpunit": "~7.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Railken\\LaraOre\\UserServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\LaraOre\\User\\Database\\Seeds\\": "database/seeds/",
-                    "Railken\\LaraOre\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "lara-ore",
-                "lara-ore-user",
-                "laravel",
-                "user"
-            ],
-            "time": "2018-07-26T21:02:00+00:00"
-        },
-        {
-            "name": "railken/laravel-manager",
-            "version": "v3.1.15",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/entity-manager-laravel.git",
-                "reference": "8bf3346dc6c2f09080a6abd2b41c47833ec72f4f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/entity-manager-laravel/zipball/8bf3346dc6c2f09080a6abd2b41c47833ec72f4f",
-                "reference": "8bf3346dc6c2f09080a6abd2b41c47833ec72f4f",
+                "url": "https://api.github.com/repos/railken/lem/zipball/47727feaafde2fea097eb33c6a656b097d1deef6",
+                "reference": "47727feaafde2fea097eb33c6a656b097d1deef6",
                 "shasum": ""
             },
             "require": {
@@ -3716,9 +3658,16 @@
                 "phpunit/phpunit": "~7.0"
             },
             "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Railken\\Lem\\Providers\\ManagerServiceProvider"
+                    ]
+                }
+            },
             "autoload": {
                 "psr-4": {
-                    "Railken\\Laravel\\Manager\\": "src/"
+                    "Railken\\Lem\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -3728,20 +3677,20 @@
             "keywords": [
                 "laravel"
             ],
-            "time": "2018-08-01T14:15:38+00:00"
+            "time": "2018-10-04T19:59:20+00:00"
         },
         {
             "name": "railken/search-query",
-            "version": "v2.2.0",
+            "version": "v2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/railken/search-query.git",
-                "reference": "13c139716fd03bf910c8e21df9b1e92d373d36f5"
+                "reference": "3703e761b57b62487d137cfc5564a691f7347950"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/railken/search-query/zipball/13c139716fd03bf910c8e21df9b1e92d373d36f5",
-                "reference": "13c139716fd03bf910c8e21df9b1e92d373d36f5",
+                "url": "https://api.github.com/repos/railken/search-query/zipball/3703e761b57b62487d137cfc5564a691f7347950",
+                "reference": "3703e761b57b62487d137cfc5564a691f7347950",
                 "shasum": ""
             },
             "require": {
@@ -3750,9 +3699,8 @@
                 "railken/bag": "^1.2"
             },
             "require-dev": {
-                "codeclimate/php-test-reporter": "^0.4.4",
                 "friendsofphp/php-cs-fixer": "^2.8.1",
-                "phpstan/phpstan": "^0.10.0",
+                "phpstan/phpstan": "^0.10",
                 "phpunit/phpunit": "~6.0"
             },
             "type": "library",
@@ -3768,7 +3716,57 @@
             "keywords": [
                 "api"
             ],
-            "time": "2018-07-01T01:50:18+00:00"
+            "time": "2018-10-03T15:26:04+00:00"
+        },
+        {
+            "name": "railken/template",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/railken/template.git",
+                "reference": "c0597516e2925eea5b67a743b25d7de2cea9cabd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/railken/template/zipball/c0597516e2925eea5b67a743b25d7de2cea9cabd",
+                "reference": "c0597516e2925eea5b67a743b25d7de2cea9cabd",
+                "shasum": ""
+            },
+            "require": {
+                "dompdf/dompdf": "^0.8.2",
+                "mewesk/twig-excel-bundle": "^2.1",
+                "php": ">=7.1",
+                "railken/bag": "^1.2",
+                "rcrowe/twigbridge": "^0.9.6"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.8.1",
+                "orchestra/testbench": "~3.6",
+                "phpstan/phpstan": "^0.10",
+                "phpunit/phpunit": "~7.0",
+                "spatie/pdf-to-text": "^1.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Railken\\Template\\TemplateServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Railken\\Template\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "template"
+            ],
+            "time": "2018-09-13T13:32:37+00:00"
         },
         {
             "name": "ramsey/uuid",
@@ -3854,22 +3852,22 @@
         },
         {
             "name": "rcrowe/twigbridge",
-            "version": "v0.9.6",
+            "version": "v0.9.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rcrowe/TwigBridge.git",
-                "reference": "c3579440a3ca47ca45bfb0ed854bc0ff9b086bf5"
+                "reference": "d0c998ae6d39f154c4e2d01ef914e49d0b7d5d68"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rcrowe/TwigBridge/zipball/c3579440a3ca47ca45bfb0ed854bc0ff9b086bf5",
-                "reference": "c3579440a3ca47ca45bfb0ed854bc0ff9b086bf5",
+                "url": "https://api.github.com/repos/rcrowe/TwigBridge/zipball/d0c998ae6d39f154c4e2d01ef914e49d0b7d5d68",
+                "reference": "d0c998ae6d39f154c4e2d01ef914e49d0b7d5d68",
                 "shasum": ""
             },
             "require": {
-                "illuminate/support": "5.0.*|5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*",
-                "illuminate/view": "5.0.*|5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*",
-                "php": ">=5.4.0",
+                "illuminate/support": "5.5.*|5.6.*|5.7.*",
+                "illuminate/view": "5.5.*|5.6.*|5.7.*",
+                "php": ">=7",
                 "twig/twig": "~1.30"
             },
             "require-dev": {
@@ -3922,20 +3920,20 @@
                 "laravel",
                 "twig"
             ],
-            "time": "2018-02-08T15:59:23+00:00"
+            "time": "2018-08-31T13:30:10+00:00"
         },
         {
             "name": "respect/validation",
-            "version": "1.1.23",
+            "version": "1.1.28",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Respect/Validation.git",
-                "reference": "add542ea48be874ca8ab82208367430488a01e77"
+                "reference": "48b06254c4af1a2d6c1715eb3a2bb3cb72e08bfc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Respect/Validation/zipball/add542ea48be874ca8ab82208367430488a01e77",
-                "reference": "add542ea48be874ca8ab82208367430488a01e77",
+                "url": "https://api.github.com/repos/Respect/Validation/zipball/48b06254c4af1a2d6c1715eb3a2bb3cb72e08bfc",
+                "reference": "48b06254c4af1a2d6c1715eb3a2bb3cb72e08bfc",
                 "shasum": ""
             },
             "require": {
@@ -3943,7 +3941,7 @@
                 "symfony/polyfill-mbstring": "^1.2"
             },
             "require-dev": {
-                "egulias/email-validator": "~1.2",
+                "egulias/email-validator": "~1.2 || ~2.1",
                 "mikey179/vfsstream": "^1.5",
                 "phpunit/phpunit": "~4.0",
                 "symfony/validator": "~2.6.9",
@@ -3970,7 +3968,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "BSD Style"
+                "BSD-3-Clause"
             ],
             "authors": [
                 {
@@ -3985,7 +3983,7 @@
                 "validation",
                 "validator"
             ],
-            "time": "2018-08-18T13:10:37+00:00"
+            "time": "2018-10-11T12:18:10+00:00"
         },
         {
             "name": "sabberworm/php-css-parser",
@@ -4085,16 +4083,16 @@
         },
         {
             "name": "spatie/image-optimizer",
-            "version": "1.1.0",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/image-optimizer.git",
-                "reference": "1530d6cf72070068eecab150ffb73466c3806bdd"
+                "reference": "620ee03c6ef0bfb5f0646e595de15965f55c4c61"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/image-optimizer/zipball/1530d6cf72070068eecab150ffb73466c3806bdd",
-                "reference": "1530d6cf72070068eecab150ffb73466c3806bdd",
+                "url": "https://api.github.com/repos/spatie/image-optimizer/zipball/620ee03c6ef0bfb5f0646e595de15965f55c4c61",
+                "reference": "620ee03c6ef0bfb5f0646e595de15965f55c4c61",
                 "shasum": ""
             },
             "require": {
@@ -4130,24 +4128,28 @@
                 "image-optimizer",
                 "spatie"
             ],
-            "time": "2018-06-05T07:36:17+00:00"
+            "time": "2018-10-10T13:05:23+00:00"
         },
         {
             "name": "spatie/laravel-medialibrary",
-            "version": "7.4.1",
+            "version": "7.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-medialibrary.git",
-                "reference": "146355b4c9473bacef56fd8520d73e0cc406ffec"
+                "reference": "e8aba8e897456d4ce5ad090879e3aef564d3494d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/146355b4c9473bacef56fd8520d73e0cc406ffec",
-                "reference": "146355b4c9473bacef56fd8520d73e0cc406ffec",
+                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/e8aba8e897456d4ce5ad090879e3aef564d3494d",
+                "reference": "e8aba8e897456d4ce5ad090879e3aef564d3494d",
                 "shasum": ""
             },
             "require": {
-                "laravel/framework": "~5.5.0|~5.6.0|~5.7.0",
+                "illuminate/bus": "~5.5.0|~5.6.0|~5.7.0",
+                "illuminate/console": "~5.5.0|~5.6.0|~5.7.0",
+                "illuminate/database": "~5.5.0|~5.6.0|~5.7.0",
+                "illuminate/pipeline": "~5.5.0|~5.6.0|~5.7.0",
+                "illuminate/support": "~5.5.0|~5.6.0|~5.7.0",
                 "league/flysystem": "^1.0.8",
                 "maennchen/zipstream-php": "~0.4",
                 "php": "^7.1",
@@ -4209,7 +4211,7 @@
                 "media",
                 "spatie"
             ],
-            "time": "2018-08-24T09:18:57+00:00"
+            "time": "2018-09-17T11:28:05+00:00"
         },
         {
             "name": "spatie/pdf-to-image",
@@ -4309,16 +4311,16 @@
         },
         {
             "name": "swiftmailer/swiftmailer",
-            "version": "v6.1.2",
+            "version": "v6.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "7d760881d266d63c5e7a1155cbcf2ac656a31ca8"
+                "reference": "8ddcb66ac10c392d3beb54829eef8ac1438595f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/7d760881d266d63c5e7a1155cbcf2ac656a31ca8",
-                "reference": "7d760881d266d63c5e7a1155cbcf2ac656a31ca8",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/8ddcb66ac10c392d3beb54829eef8ac1438595f4",
+                "reference": "8ddcb66ac10c392d3beb54829eef8ac1438595f4",
                 "shasum": ""
             },
             "require": {
@@ -4364,20 +4366,20 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2018-07-13T07:04:35+00:00"
+            "time": "2018-09-11T07:12:52+00:00"
         },
         {
             "name": "symfony/cache",
-            "version": "v4.1.3",
+            "version": "v4.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/cache.git",
-                "reference": "c666a5bbfeb1fe05c7b91d46810f405c8bea14cf"
+                "reference": "05ce0ddc8bc1ffe592105398fc2c725cb3080a38"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/cache/zipball/c666a5bbfeb1fe05c7b91d46810f405c8bea14cf",
-                "reference": "c666a5bbfeb1fe05c7b91d46810f405c8bea14cf",
+                "url": "https://api.github.com/repos/symfony/cache/zipball/05ce0ddc8bc1ffe592105398fc2c725cb3080a38",
+                "reference": "05ce0ddc8bc1ffe592105398fc2c725cb3080a38",
                 "shasum": ""
             },
             "require": {
@@ -4433,20 +4435,20 @@
                 "caching",
                 "psr6"
             ],
-            "time": "2018-07-26T11:24:31+00:00"
+            "time": "2018-09-30T03:38:13+00:00"
         },
         {
             "name": "symfony/class-loader",
-            "version": "v3.4.14",
+            "version": "v3.4.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/class-loader.git",
-                "reference": "31db283fc86d3143e7ff87e922177b457d909c30"
+                "reference": "f31333bdff54c7595f834d510a6d2325573ddb36"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/class-loader/zipball/31db283fc86d3143e7ff87e922177b457d909c30",
-                "reference": "31db283fc86d3143e7ff87e922177b457d909c30",
+                "url": "https://api.github.com/repos/symfony/class-loader/zipball/f31333bdff54c7595f834d510a6d2325573ddb36",
+                "reference": "f31333bdff54c7595f834d510a6d2325573ddb36",
                 "shasum": ""
             },
             "require": {
@@ -4489,20 +4491,20 @@
             ],
             "description": "Symfony ClassLoader Component",
             "homepage": "https://symfony.com",
-            "time": "2018-07-26T11:19:56+00:00"
+            "time": "2018-10-02T12:28:39+00:00"
         },
         {
             "name": "symfony/config",
-            "version": "v4.1.3",
+            "version": "v4.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/config.git",
-                "reference": "c868972ac26e4e19860ce11b300bb74145246ff9"
+                "reference": "b3d4d7b567d7a49e6dfafb6d4760abc921177c96"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/config/zipball/c868972ac26e4e19860ce11b300bb74145246ff9",
-                "reference": "c868972ac26e4e19860ce11b300bb74145246ff9",
+                "url": "https://api.github.com/repos/symfony/config/zipball/b3d4d7b567d7a49e6dfafb6d4760abc921177c96",
+                "reference": "b3d4d7b567d7a49e6dfafb6d4760abc921177c96",
                 "shasum": ""
             },
             "require": {
@@ -4552,20 +4554,20 @@
             ],
             "description": "Symfony Config Component",
             "homepage": "https://symfony.com",
-            "time": "2018-07-26T11:24:31+00:00"
+            "time": "2018-09-08T13:24:10+00:00"
         },
         {
             "name": "symfony/console",
-            "version": "v4.1.3",
+            "version": "v4.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "ca80b8ced97cf07390078b29773dc384c39eee1f"
+                "reference": "dc7122fe5f6113cfaba3b3de575d31112c9aa60b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/ca80b8ced97cf07390078b29773dc384c39eee1f",
-                "reference": "ca80b8ced97cf07390078b29773dc384c39eee1f",
+                "url": "https://api.github.com/repos/symfony/console/zipball/dc7122fe5f6113cfaba3b3de575d31112c9aa60b",
+                "reference": "dc7122fe5f6113cfaba3b3de575d31112c9aa60b",
                 "shasum": ""
             },
             "require": {
@@ -4620,20 +4622,20 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2018-07-26T11:24:31+00:00"
+            "time": "2018-10-03T08:15:46+00:00"
         },
         {
             "name": "symfony/css-selector",
-            "version": "v4.1.3",
+            "version": "v4.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/css-selector.git",
-                "reference": "2a4df7618f869b456f9096781e78c57b509d76c7"
+                "reference": "d67de79a70a27d93c92c47f37ece958bf8de4d8a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/css-selector/zipball/2a4df7618f869b456f9096781e78c57b509d76c7",
-                "reference": "2a4df7618f869b456f9096781e78c57b509d76c7",
+                "url": "https://api.github.com/repos/symfony/css-selector/zipball/d67de79a70a27d93c92c47f37ece958bf8de4d8a",
+                "reference": "d67de79a70a27d93c92c47f37ece958bf8de4d8a",
                 "shasum": ""
             },
             "require": {
@@ -4673,20 +4675,20 @@
             ],
             "description": "Symfony CssSelector Component",
             "homepage": "https://symfony.com",
-            "time": "2018-07-26T09:10:45+00:00"
+            "time": "2018-10-02T16:36:10+00:00"
         },
         {
             "name": "symfony/debug",
-            "version": "v4.1.3",
+            "version": "v4.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
-                "reference": "9316545571f079c4dd183e674721d9dc783ce196"
+                "reference": "e3f76ce6198f81994e019bb2b4e533e9de1b9b90"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/debug/zipball/9316545571f079c4dd183e674721d9dc783ce196",
-                "reference": "9316545571f079c4dd183e674721d9dc783ce196",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/e3f76ce6198f81994e019bb2b4e533e9de1b9b90",
+                "reference": "e3f76ce6198f81994e019bb2b4e533e9de1b9b90",
                 "shasum": ""
             },
             "require": {
@@ -4729,20 +4731,20 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2018-07-26T11:24:31+00:00"
+            "time": "2018-10-02T16:36:10+00:00"
         },
         {
             "name": "symfony/dependency-injection",
-            "version": "v4.1.3",
+            "version": "v4.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dependency-injection.git",
-                "reference": "f4f401fc2766eb8d766fc6043d9e6489b37a41e4"
+                "reference": "f6b9d893ad28aefd8942dc0469c8397e2216fe30"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/f4f401fc2766eb8d766fc6043d9e6489b37a41e4",
-                "reference": "f4f401fc2766eb8d766fc6043d9e6489b37a41e4",
+                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/f6b9d893ad28aefd8942dc0469c8397e2216fe30",
+                "reference": "f6b9d893ad28aefd8942dc0469c8397e2216fe30",
                 "shasum": ""
             },
             "require": {
@@ -4800,11 +4802,11 @@
             ],
             "description": "Symfony DependencyInjection Component",
             "homepage": "https://symfony.com",
-            "time": "2018-08-01T08:24:03+00:00"
+            "time": "2018-10-02T12:40:59+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v4.1.3",
+            "version": "v4.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
@@ -4867,16 +4869,16 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v4.1.3",
+            "version": "v4.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "2e30335e0aafeaa86645555959572fe7cea22b43"
+                "reference": "596d12b40624055c300c8b619755b748ca5cf0b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/2e30335e0aafeaa86645555959572fe7cea22b43",
-                "reference": "2e30335e0aafeaa86645555959572fe7cea22b43",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/596d12b40624055c300c8b619755b748ca5cf0b5",
+                "reference": "596d12b40624055c300c8b619755b748ca5cf0b5",
                 "shasum": ""
             },
             "require": {
@@ -4913,20 +4915,20 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "https://symfony.com",
-            "time": "2018-07-26T11:24:31+00:00"
+            "time": "2018-10-02T12:40:59+00:00"
         },
         {
             "name": "symfony/finder",
-            "version": "v4.1.3",
+            "version": "v4.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "e162f1df3102d0b7472805a5a9d5db9fcf0a8068"
+                "reference": "1f17195b44543017a9c9b2d437c670627e96ad06"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/e162f1df3102d0b7472805a5a9d5db9fcf0a8068",
-                "reference": "e162f1df3102d0b7472805a5a9d5db9fcf0a8068",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/1f17195b44543017a9c9b2d437c670627e96ad06",
+                "reference": "1f17195b44543017a9c9b2d437c670627e96ad06",
                 "shasum": ""
             },
             "require": {
@@ -4962,20 +4964,20 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2018-07-26T11:24:31+00:00"
+            "time": "2018-10-03T08:47:56+00:00"
         },
         {
             "name": "symfony/framework-bundle",
-            "version": "v3.4.14",
+            "version": "v3.4.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/framework-bundle.git",
-                "reference": "cee4b4942bedd86fc1494215e6a1a4a734bfe0a8"
+                "reference": "3736bf6f3578613a010954ee66c597e7b1bed75b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/framework-bundle/zipball/cee4b4942bedd86fc1494215e6a1a4a734bfe0a8",
-                "reference": "cee4b4942bedd86fc1494215e6a1a4a734bfe0a8",
+                "url": "https://api.github.com/repos/symfony/framework-bundle/zipball/3736bf6f3578613a010954ee66c597e7b1bed75b",
+                "reference": "3736bf6f3578613a010954ee66c597e7b1bed75b",
                 "shasum": ""
             },
             "require": {
@@ -5076,20 +5078,20 @@
             ],
             "description": "Symfony FrameworkBundle",
             "homepage": "https://symfony.com",
-            "time": "2018-07-29T15:24:21+00:00"
+            "time": "2018-10-03T08:41:12+00:00"
         },
         {
             "name": "symfony/http-foundation",
-            "version": "v4.1.3",
+            "version": "v4.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "7d93e3547660ec7ee3dad1428ba42e8076a0e5f1"
+                "reference": "d528136617ff24f530e70df9605acc1b788b08d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/7d93e3547660ec7ee3dad1428ba42e8076a0e5f1",
-                "reference": "7d93e3547660ec7ee3dad1428ba42e8076a0e5f1",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/d528136617ff24f530e70df9605acc1b788b08d4",
+                "reference": "d528136617ff24f530e70df9605acc1b788b08d4",
                 "shasum": ""
             },
             "require": {
@@ -5130,20 +5132,20 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "https://symfony.com",
-            "time": "2018-08-01T14:07:44+00:00"
+            "time": "2018-10-03T08:48:45+00:00"
         },
         {
             "name": "symfony/http-kernel",
-            "version": "v4.1.3",
+            "version": "v4.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-kernel.git",
-                "reference": "6347be5110efb27fe45ea04bf213078b67a05036"
+                "reference": "f5e7c15a5d010be0e16ce798594c5960451d4220"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/6347be5110efb27fe45ea04bf213078b67a05036",
-                "reference": "6347be5110efb27fe45ea04bf213078b67a05036",
+                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/f5e7c15a5d010be0e16ce798594c5960451d4220",
+                "reference": "f5e7c15a5d010be0e16ce798594c5960451d4220",
                 "shasum": ""
             },
             "require": {
@@ -5217,7 +5219,7 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "https://symfony.com",
-            "time": "2018-08-01T15:30:34+00:00"
+            "time": "2018-10-03T12:53:38+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -5393,16 +5395,16 @@
         },
         {
             "name": "symfony/process",
-            "version": "v4.1.3",
+            "version": "v4.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "f01fc7a4493572f7f506c49dcb50ad01fb3a2f56"
+                "reference": "ee33c0322a8fee0855afcc11fff81e6b1011b529"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/f01fc7a4493572f7f506c49dcb50ad01fb3a2f56",
-                "reference": "f01fc7a4493572f7f506c49dcb50ad01fb3a2f56",
+                "url": "https://api.github.com/repos/symfony/process/zipball/ee33c0322a8fee0855afcc11fff81e6b1011b529",
+                "reference": "ee33c0322a8fee0855afcc11fff81e6b1011b529",
                 "shasum": ""
             },
             "require": {
@@ -5438,38 +5440,39 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2018-07-26T11:24:31+00:00"
+            "time": "2018-10-02T12:40:59+00:00"
         },
         {
             "name": "symfony/psr-http-message-bridge",
-            "version": "v1.0.2",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/psr-http-message-bridge.git",
-                "reference": "c2b757934f2d9681a287e662efbc27c41fe8ef86"
+                "reference": "53c15a6a7918e6c2ab16ae370ea607fb40cab196"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/psr-http-message-bridge/zipball/c2b757934f2d9681a287e662efbc27c41fe8ef86",
-                "reference": "c2b757934f2d9681a287e662efbc27c41fe8ef86",
+                "url": "https://api.github.com/repos/symfony/psr-http-message-bridge/zipball/53c15a6a7918e6c2ab16ae370ea607fb40cab196",
+                "reference": "53c15a6a7918e6c2ab16ae370ea607fb40cab196",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3",
-                "psr/http-message": "~1.0",
-                "symfony/http-foundation": "~2.3|~3.0|~4.0"
+                "php": "^5.3.3 || ^7.0",
+                "psr/http-message": "^1.0",
+                "symfony/http-foundation": "^2.3.42 || ^3.4 || ^4.0"
             },
             "require-dev": {
-                "symfony/phpunit-bridge": "~3.2|4.0"
+                "symfony/phpunit-bridge": "^3.4 || 4.0"
             },
             "suggest": {
+                "psr/http-factory-implementation": "To use the PSR-17 factory",
                 "psr/http-message-implementation": "To use the HttpFoundation factory",
                 "zendframework/zend-diactoros": "To use the Zend Diactoros factory"
             },
             "type": "symfony-bridge",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0-dev"
+                    "dev-master": "1.1-dev"
                 }
             },
             "autoload": {
@@ -5498,20 +5501,20 @@
                 "http-message",
                 "psr-7"
             ],
-            "time": "2017-12-19T00:31:44+00:00"
+            "time": "2018-08-30T16:28:28+00:00"
         },
         {
             "name": "symfony/routing",
-            "version": "v4.1.3",
+            "version": "v4.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/routing.git",
-                "reference": "6912cfebc0ea4e7a46fdd15c9bd1f427dd39ff1b"
+                "reference": "537803f0bdfede36b9acef052d2e4d447d9fa0e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/routing/zipball/6912cfebc0ea4e7a46fdd15c9bd1f427dd39ff1b",
-                "reference": "6912cfebc0ea4e7a46fdd15c9bd1f427dd39ff1b",
+                "url": "https://api.github.com/repos/symfony/routing/zipball/537803f0bdfede36b9acef052d2e4d447d9fa0e9",
+                "reference": "537803f0bdfede36b9acef052d2e4d447d9fa0e9",
                 "shasum": ""
             },
             "require": {
@@ -5575,20 +5578,20 @@
                 "uri",
                 "url"
             ],
-            "time": "2018-07-26T11:24:31+00:00"
+            "time": "2018-10-02T12:40:59+00:00"
         },
         {
             "name": "symfony/translation",
-            "version": "v4.1.3",
+            "version": "v4.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation.git",
-                "reference": "6fcd1bd44fd6d7181e6ea57a6f4e08a09b29ef65"
+                "reference": "9f0b61e339160a466ebcde167a6c5521c810e304"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation/zipball/6fcd1bd44fd6d7181e6ea57a6f4e08a09b29ef65",
-                "reference": "6fcd1bd44fd6d7181e6ea57a6f4e08a09b29ef65",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/9f0b61e339160a466ebcde167a6c5521c810e304",
+                "reference": "9f0b61e339160a466ebcde167a6c5521c810e304",
                 "shasum": ""
             },
             "require": {
@@ -5644,20 +5647,20 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "https://symfony.com",
-            "time": "2018-07-26T11:24:31+00:00"
+            "time": "2018-10-02T16:36:10+00:00"
         },
         {
             "name": "symfony/var-dumper",
-            "version": "v4.1.3",
+            "version": "v4.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "69e174f4c02ec43919380171c6f7550753299316"
+                "reference": "60319b45653580b0cdacca499344577d87732f16"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/69e174f4c02ec43919380171c6f7550753299316",
-                "reference": "69e174f4c02ec43919380171c6f7550753299316",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/60319b45653580b0cdacca499344577d87732f16",
+                "reference": "60319b45653580b0cdacca499344577d87732f16",
                 "shasum": ""
             },
             "require": {
@@ -5719,7 +5722,7 @@
                 "debug",
                 "dump"
             ],
-            "time": "2018-07-26T11:24:31+00:00"
+            "time": "2018-10-02T16:36:10+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
@@ -5886,16 +5889,16 @@
         },
         {
             "name": "zendframework/zend-diactoros",
-            "version": "1.8.5",
+            "version": "1.8.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-diactoros.git",
-                "reference": "3e4edb822c942f37ade0d09579cfbab11e2fee87"
+                "reference": "20da13beba0dde8fb648be3cc19765732790f46e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/3e4edb822c942f37ade0d09579cfbab11e2fee87",
-                "reference": "3e4edb822c942f37ade0d09579cfbab11e2fee87",
+                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/20da13beba0dde8fb648be3cc19765732790f46e",
+                "reference": "20da13beba0dde8fb648be3cc19765732790f46e",
                 "shasum": ""
             },
             "require": {
@@ -5908,6 +5911,7 @@
             "require-dev": {
                 "ext-dom": "*",
                 "ext-libxml": "*",
+                "php-http/psr7-integration-tests": "dev-master",
                 "phpunit/phpunit": "^5.7.16 || ^6.0.8 || ^7.2.7",
                 "zendframework/zend-coding-standard": "~1.0"
             },
@@ -5945,100 +5949,22 @@
                 "psr",
                 "psr-7"
             ],
-            "time": "2018-08-10T14:16:32+00:00"
-        },
-        {
-            "name": "zizaco/entrust",
-            "version": "1.9.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Zizaco/entrust.git",
-                "reference": "05b2542f5f96ea80998a13800c6e216df6821bff"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Zizaco/entrust/zipball/05b2542f5f96ea80998a13800c6e216df6821bff",
-                "reference": "05b2542f5f96ea80998a13800c6e216df6821bff",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/cache": "~5.0",
-                "illuminate/console": "~5.0",
-                "illuminate/support": "~5.0",
-                "php": ">=5.5.0"
-            },
-            "require-dev": {
-                "illuminate/database": "~5.0",
-                "mockery/mockery": "dev-master",
-                "phpunit/phpunit": "~4.1",
-                "sami/sami": "dev-master"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Zizaco\\Entrust\\EntrustServiceProvider"
-                    ],
-                    "aliases": {
-                        "Entrust": "Zizaco\\Entrust\\EntrustFacade"
-                    }
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "src/commands"
-                ],
-                "psr-4": {
-                    "Zizaco\\Entrust\\": "src/Entrust/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Andrew Elkins",
-                    "homepage": "http://andrewelkins.com"
-                },
-                {
-                    "name": "Zizaco Zizuini",
-                    "email": "zizaco@gmail.com"
-                },
-                {
-                    "name": "Ben Batschelet",
-                    "homepage": "http://github.com/bbatsche"
-                },
-                {
-                    "name": "Michele Angioni",
-                    "email": "michele.angioni@gmail.com"
-                }
-            ],
-            "description": "This package provides a flexible way to add Role-based Permissions to Laravel",
-            "keywords": [
-                "acl",
-                "auth",
-                "illuminate",
-                "laravel",
-                "permission",
-                "roles"
-            ],
-            "time": "2017-11-13T23:25:18+00:00"
+            "time": "2018-09-05T19:29:37+00:00"
         }
     ],
     "packages-dev": [
         {
             "name": "composer/xdebug-handler",
-            "version": "1.2.1",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/xdebug-handler.git",
-                "reference": "e37cbd80da64afe314c72de8d2d2fec0e40d9373"
+                "reference": "b8e9745fb9b06ea6664d8872c4505fb16df4611c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/xdebug-handler/zipball/e37cbd80da64afe314c72de8d2d2fec0e40d9373",
-                "reference": "e37cbd80da64afe314c72de8d2d2fec0e40d9373",
+                "url": "https://api.github.com/repos/composer/xdebug-handler/zipball/b8e9745fb9b06ea6664d8872c4505fb16df4611c",
+                "reference": "b8e9745fb9b06ea6664d8872c4505fb16df4611c",
                 "shasum": ""
             },
             "require": {
@@ -6069,7 +5995,7 @@
                 "Xdebug",
                 "performance"
             ],
-            "time": "2018-08-23T12:00:19+00:00"
+            "time": "2018-08-31T19:07:57+00:00"
         },
         {
             "name": "doctrine/instantiator",
@@ -6127,16 +6053,16 @@
         },
         {
             "name": "filp/whoops",
-            "version": "2.2.0",
+            "version": "2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "181c4502d8f34db7aed7bfe88d4f87875b8e947a"
+                "reference": "e79cd403fb77fc8963a99ecc30e80ddd885b3311"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/181c4502d8f34db7aed7bfe88d4f87875b8e947a",
-                "reference": "181c4502d8f34db7aed7bfe88d4f87875b8e947a",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/e79cd403fb77fc8963a99ecc30e80ddd885b3311",
+                "reference": "e79cd403fb77fc8963a99ecc30e80ddd885b3311",
                 "shasum": ""
             },
             "require": {
@@ -6155,7 +6081,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.2-dev"
                 }
             },
             "autoload": {
@@ -6184,7 +6110,57 @@
                 "throwable",
                 "whoops"
             ],
-            "time": "2018-03-03T17:56:25+00:00"
+            "time": "2018-06-30T13:14:06+00:00"
+        },
+        {
+            "name": "fzaninotto/faker",
+            "version": "v1.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fzaninotto/Faker.git",
+                "reference": "f72816b43e74063c8b10357394b6bba8cb1c10de"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/f72816b43e74063c8b10357394b6bba8cb1c10de",
+                "reference": "f72816b43e74063c8b10357394b6bba8cb1c10de",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3.3 || ^7.0"
+            },
+            "require-dev": {
+                "ext-intl": "*",
+                "phpunit/phpunit": "^4.8.35 || ^5.7",
+                "squizlabs/php_codesniffer": "^1.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.8-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Faker\\": "src/Faker/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "François Zaninotto"
+                }
+            ],
+            "description": "Faker is a PHP library that generates fake data for you.",
+            "keywords": [
+                "data",
+                "faker",
+                "fixtures"
+            ],
+            "time": "2018-07-12T10:23:15+00:00"
         },
         {
             "name": "hamcrest/hamcrest-php",
@@ -6287,16 +6263,16 @@
         },
         {
             "name": "mockery/mockery",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mockery/mockery.git",
-                "reference": "99e29d3596b16dabe4982548527d5ddf90232e99"
+                "reference": "100633629bf76d57430b86b7098cd6beb996a35a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mockery/mockery/zipball/99e29d3596b16dabe4982548527d5ddf90232e99",
-                "reference": "99e29d3596b16dabe4982548527d5ddf90232e99",
+                "url": "https://api.github.com/repos/mockery/mockery/zipball/100633629bf76d57430b86b7098cd6beb996a35a",
+                "reference": "100633629bf76d57430b86b7098cd6beb996a35a",
                 "shasum": ""
             },
             "require": {
@@ -6305,8 +6281,7 @@
                 "php": ">=5.6.0"
             },
             "require-dev": {
-                "phpdocumentor/phpdocumentor": "^2.9",
-                "phpunit/phpunit": "~5.7.10|~6.5"
+                "phpunit/phpunit": "~5.7.10|~6.5|~7.0"
             },
             "type": "library",
             "extra": {
@@ -6349,7 +6324,7 @@
                 "test double",
                 "testing"
             ],
-            "time": "2018-05-08T08:54:48+00:00"
+            "time": "2018-10-02T21:52:37+00:00"
         },
         {
             "name": "myclabs/deep-copy",
@@ -6477,16 +6452,16 @@
         },
         {
             "name": "nette/di",
-            "version": "v2.4.13",
+            "version": "v2.4.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/di.git",
-                "reference": "3f8f212b02d5c17feb97a7e0a39ab306f40c06ca"
+                "reference": "923da3e2c0aa53162ef455472c0ac7787b096c5a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/di/zipball/3f8f212b02d5c17feb97a7e0a39ab306f40c06ca",
-                "reference": "3f8f212b02d5c17feb97a7e0a39ab306f40c06ca",
+                "url": "https://api.github.com/repos/nette/di/zipball/923da3e2c0aa53162ef455472c0ac7787b096c5a",
+                "reference": "923da3e2c0aa53162ef455472c0ac7787b096c5a",
                 "shasum": ""
             },
             "require": {
@@ -6542,7 +6517,7 @@
                 "nette",
                 "static"
             ],
-            "time": "2018-06-11T08:46:01+00:00"
+            "time": "2018-09-17T15:47:40+00:00"
         },
         {
             "name": "nette/finder",
@@ -6731,16 +6706,16 @@
         },
         {
             "name": "nette/robot-loader",
-            "version": "v3.0.4",
+            "version": "v3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/robot-loader.git",
-                "reference": "3cf88781a05e0bf4618ae605361afcbaa4d5b392"
+                "reference": "fc76c70e740b10f091e502b2e393d0be912f38d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/robot-loader/zipball/3cf88781a05e0bf4618ae605361afcbaa4d5b392",
-                "reference": "3cf88781a05e0bf4618ae605361afcbaa4d5b392",
+                "url": "https://api.github.com/repos/nette/robot-loader/zipball/fc76c70e740b10f091e502b2e393d0be912f38d4",
+                "reference": "fc76c70e740b10f091e502b2e393d0be912f38d4",
                 "shasum": ""
             },
             "require": {
@@ -6759,7 +6734,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0-dev"
+                    "dev-master": "3.1-dev"
                 }
             },
             "autoload": {
@@ -6792,20 +6767,20 @@
                 "nette",
                 "trait"
             ],
-            "time": "2018-06-22T09:34:04+00:00"
+            "time": "2018-08-13T14:19:06+00:00"
         },
         {
             "name": "nette/utils",
-            "version": "v2.5.2",
+            "version": "v2.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/utils.git",
-                "reference": "183069866dc477fcfbac393ed486aaa6d93d19a5"
+                "reference": "17b9f76f2abd0c943adfb556e56f2165460b15ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/utils/zipball/183069866dc477fcfbac393ed486aaa6d93d19a5",
-                "reference": "183069866dc477fcfbac393ed486aaa6d93d19a5",
+                "url": "https://api.github.com/repos/nette/utils/zipball/17b9f76f2abd0c943adfb556e56f2165460b15ce",
+                "reference": "17b9f76f2abd0c943adfb556e56f2165460b15ce",
                 "shasum": ""
             },
             "require": {
@@ -6874,20 +6849,20 @@
                 "utility",
                 "validation"
             ],
-            "time": "2018-05-02T17:16:08+00:00"
+            "time": "2018-09-18T10:22:16+00:00"
         },
         {
             "name": "nunomaduro/collision",
-            "version": "v2.0.3",
+            "version": "v2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nunomaduro/collision.git",
-                "reference": "b1f606399ae77e9479b5597cd1aa3d8ea0078176"
+                "reference": "1149ad9f36f61b121ae61f5f6de820fc77b51e6b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nunomaduro/collision/zipball/b1f606399ae77e9479b5597cd1aa3d8ea0078176",
-                "reference": "b1f606399ae77e9479b5597cd1aa3d8ea0078176",
+                "url": "https://api.github.com/repos/nunomaduro/collision/zipball/1149ad9f36f61b121ae61f5f6de820fc77b51e6b",
+                "reference": "1149ad9f36f61b121ae61f5f6de820fc77b51e6b",
                 "shasum": ""
             },
             "require": {
@@ -6897,9 +6872,9 @@
                 "symfony/console": "~2.8|~3.3|~4.0"
             },
             "require-dev": {
-                "laravel/framework": "5.6.*",
-                "phpstan/phpstan": "^0.9.2",
-                "phpunit/phpunit": "~7.2"
+                "laravel/framework": "5.7.*",
+                "phpstan/phpstan": "^0.10",
+                "phpunit/phpunit": "~7.3"
             },
             "type": "library",
             "extra": {
@@ -6937,7 +6912,7 @@
                 "php",
                 "symfony"
             ],
-            "time": "2018-06-16T22:05:52+00:00"
+            "time": "2018-10-03T20:01:54+00:00"
         },
         {
             "name": "ocramius/package-versions",
@@ -7422,16 +7397,16 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "6.0.7",
+            "version": "6.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "865662550c384bc1db7e51d29aeda1c2c161d69a"
+                "reference": "848f78b3309780fef7ec8c4666b7ab4e6b09b22f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/865662550c384bc1db7e51d29aeda1c2c161d69a",
-                "reference": "865662550c384bc1db7e51d29aeda1c2c161d69a",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/848f78b3309780fef7ec8c4666b7ab4e6b09b22f",
+                "reference": "848f78b3309780fef7ec8c4666b7ab4e6b09b22f",
                 "shasum": ""
             },
             "require": {
@@ -7481,24 +7456,27 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2018-06-01T07:51:50+00:00"
+            "time": "2018-10-04T03:41:23+00:00"
         },
         {
             "name": "phpunit/php-file-iterator",
-            "version": "2.0.1",
+            "version": "2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-file-iterator.git",
-                "reference": "cecbc684605bb0cc288828eb5d65d93d5c676d3c"
+                "reference": "050bedf145a257b1ff02746c31894800e5122946"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-file-iterator/zipball/cecbc684605bb0cc288828eb5d65d93d5c676d3c",
-                "reference": "cecbc684605bb0cc288828eb5d65d93d5c676d3c",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-file-iterator/zipball/050bedf145a257b1ff02746c31894800e5122946",
+                "reference": "050bedf145a257b1ff02746c31894800e5122946",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.1"
             },
             "type": "library",
             "extra": {
@@ -7528,7 +7506,7 @@
                 "filesystem",
                 "iterator"
             ],
-            "time": "2018-06-11T11:44:00+00:00"
+            "time": "2018-09-13T20:33:42+00:00"
         },
         {
             "name": "phpunit/php-text-template",
@@ -7671,16 +7649,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "7.3.2",
+            "version": "7.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "34705f81bddc3f505b9599a2ef96e2b4315ba9b8"
+                "reference": "f3837fa1e07758057ae06e8ddec6d06ba183f126"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/34705f81bddc3f505b9599a2ef96e2b4315ba9b8",
-                "reference": "34705f81bddc3f505b9599a2ef96e2b4315ba9b8",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/f3837fa1e07758057ae06e8ddec6d06ba183f126",
+                "reference": "f3837fa1e07758057ae06e8ddec6d06ba183f126",
                 "shasum": ""
             },
             "require": {
@@ -7705,7 +7683,7 @@
                 "sebastian/exporter": "^3.1",
                 "sebastian/global-state": "^2.0",
                 "sebastian/object-enumerator": "^3.0.3",
-                "sebastian/resource-operations": "^1.0",
+                "sebastian/resource-operations": "^2.0",
                 "sebastian/version": "^2.0.1"
             },
             "conflict": {
@@ -7725,7 +7703,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "7.3-dev"
+                    "dev-master": "7.4-dev"
                 }
             },
             "autoload": {
@@ -7751,7 +7729,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2018-08-22T06:39:21+00:00"
+            "time": "2018-10-05T04:05:24+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
@@ -8233,25 +8211,25 @@
         },
         {
             "name": "sebastian/resource-operations",
-            "version": "1.0.0",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/resource-operations.git",
-                "reference": "ce990bb21759f94aeafd30209e8cfcdfa8bc3f52"
+                "reference": "4d7a795d35b889bf80a0cc04e08d77cedfa917a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/resource-operations/zipball/ce990bb21759f94aeafd30209e8cfcdfa8bc3f52",
-                "reference": "ce990bb21759f94aeafd30209e8cfcdfa8bc3f52",
+                "url": "https://api.github.com/repos/sebastianbergmann/resource-operations/zipball/4d7a795d35b889bf80a0cc04e08d77cedfa917a9",
+                "reference": "4d7a795d35b889bf80a0cc04e08d77cedfa917a9",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.6.0"
+                "php": "^7.1"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "2.0-dev"
                 }
             },
             "autoload": {
@@ -8271,7 +8249,7 @@
             ],
             "description": "Provides a list of PHP built-in functions that operate on resources",
             "homepage": "https://www.github.com/sebastianbergmann/resource-operations",
-            "time": "2015-07-28T20:34:47+00:00"
+            "time": "2018-10-04T04:07:39+00:00"
         },
         {
             "name": "sebastian/version",
@@ -8409,21 +8387,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "railken/lara-ore-account": 20,
-        "railken/lara-ore-auth": 20,
-        "railken/lara-ore-notification": 20,
-        "railken/lara-ore-user": 20,
-        "railken/lara-ore-config": 20,
-        "railken/lara-ore-disk": 20,
-        "railken/lara-ore-file": 20,
-        "railken/lara-ore-repository": 20,
-        "railken/lara-ore-data-builder": 20,
-        "railken/lara-ore-template": 20,
-        "railken/lara-ore-exporter": 20,
-        "railken/lara-ore-file-generator": 20,
-        "railken/lara-ore-email-sender": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

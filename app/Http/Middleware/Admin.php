@@ -3,16 +3,16 @@
 namespace App\Http\Middleware;
 
 use Closure;
-use Core\User\User;
 use Illuminate\Support\Facades\Auth;
 
 class Admin
 {
     public function handle($request, Closure $next)
     {
+        /** @var \App\Models\User */
         $user = Auth::user();
 
-        if (!$user || $user->role !== 'admin') {
+        if ($user == null || $user->role !== 'admin') {
             abort(404);
         }
 
