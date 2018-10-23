@@ -4,10 +4,10 @@ namespace App\Exceptions;
 
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
-use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
-use Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException;
 use Illuminate\Http\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class Handler extends ExceptionHandler
 {
@@ -51,15 +51,15 @@ class Handler extends ExceptionHandler
     {
         if ($exception instanceof NotFoundHttpException) {
             return new JsonResponse(['errors' => [
-                'code' => 'not_found', 
-                'suggestion' => route('api.index')
+                'code'       => 'not_found',
+                'suggestion' => route('api.index'),
             ]], Response::HTTP_NOT_FOUND);
         }
 
         if ($exception instanceof MethodNotAllowedHttpException) {
             return new JsonResponse(['errors' => [
-                'code' => 'method_not_allowed', 
-                'suggestion' => route('api.index')
+                'code'       => 'method_not_allowed',
+                'suggestion' => route('api.index'),
             ]], Response::HTTP_METHOD_NOT_ALLOWED);
         }
 

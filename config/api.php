@@ -1,13 +1,12 @@
 <?php
 
 return [
-
     /*
     |--------------------------------------------------------------------------
     | Application Api Name
     |--------------------------------------------------------------------------
     |
-    | This value is the name of your application. 
+    | This value is the name of your application.
     |
     */
     'name' => env('APP_NAME', 'Laravel'),
@@ -40,5 +39,5 @@ return [
     | Indicate the version of your api
     |
     */
-    'version' => '1.0.0'
+    'version' => '1.0.0',
 ];
