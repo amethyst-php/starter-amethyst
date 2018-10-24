@@ -16,3 +16,4 @@ yarn-error.log
 \.php_cs\.cache
 composer\.lock
 laravel-echo-server\.json
+docs
