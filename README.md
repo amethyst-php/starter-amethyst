@@ -10,8 +10,9 @@ Download the project:
 
     git clone https://github.com/railken/starter-amethyst [project-name]
 
-## Documentation
-[read](docs/index.md)
+Generate the documentation (read docs):
+
+    php artisan amethyst:documentation:generate
 
 ## Packages
 This starter include the following packages:
