@@ -117,3 +117,6 @@ After creating a new SQLite database using a command such as `touch database/dat
 
     DB_CONNECTION=sqlite
     DB_DATABASE=/absolute/path/to/database.sqlite
+
+---
+[Back](index.md)

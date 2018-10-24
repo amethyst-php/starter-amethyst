@@ -17,6 +17,7 @@
         "railken/amethyst-config": "0.1.*",
         "railken/amethyst-custom-page": "0.1.*",
         "railken/amethyst-data-builder": "0.1.*",
+        "railken/amethyst-doc-generator": "0.1.*",
         "railken/amethyst-email-log": "0.1.*",
         "railken/amethyst-email-sender": "0.1.*",
         "railken/amethyst-exporter": "0.1.*",

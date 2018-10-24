@@ -10,23 +10,8 @@ Download the project:
 
     git clone https://github.com/railken/starter-amethyst [project-name]
 
-
-Follow the [guide](docs/installation.md) (skip if you're already familiar with laravel).
-
-
-Test with phpunit:
-
-    ./vendor/bin/phpunit
-
-Install the application:
-
-    php artisan migrate
-    php artisan install
-
-Test the index endpoint
-
-    curl -X GET ttp://localhost:8000/api
-
+## Documentation
+[read](docs/index.md)
 
 ## Packages
 This starter include the following packages:
@@ -35,6 +20,7 @@ This starter include the following packages:
  - [config](https://github.com/railken/amethyst-config)
  - [custom-page](https://github.com/railken/amethyst-custom-page)
  - [data-builder](https://github.com/railken/amethyst-data-builder)
+ - [doc-generator](https://github.com/railken/amethyst-doc-generator)
  - [email-log](https://github.com/railken/amethyst-email-log)
  - [email-sender](https://github.com/railken/amethyst-email-sender)
  - [file](https://github.com/railken/amethyst-file)
@@ -45,8 +31,3 @@ This starter include the following packages:
  - [template](https://github.com/railken/amethyst-template)
  - [user](https://github.com/railken/amethyst-user)
  - [work](https://github.com/railken/amethyst-work)
-
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
