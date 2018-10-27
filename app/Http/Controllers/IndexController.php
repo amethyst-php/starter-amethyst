@@ -4,7 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Route;
+use Railken\Amethyst\Contracts\DataBuilderContract;
+use Railken\Amethyst\Contracts\EventContract;
 
 class IndexController extends Controller
 {
@@ -50,10 +53,39 @@ class IndexController extends Controller
             'description' => config('api.description'),
             'version'     => config('api.version'),
             'endpoints'   => $endpoints,
-            'configs'     => [
-                // 'events'        => $this->getEvents(),
-                // 'data_builders' => $this->getDataBuilders(),
+            'app'         => [
+                'events' => array_merge(
+                    $this->findCachedClasses('app', EventContract::class),
+                    $this->findCachedClasses('vendor/railken/amethyst-*/src', EventContract::class)
+                ),
+                'data_builders' => array_merge(
+                    $this->findCachedClasses('app', DataBuilderContract::class),
+                    $this->findCachedClasses('vendor/railken/amethyst-*/src', DataBuilderContract::class)
+                ),
             ],
         ];
+    }
+
+    public function findCachedClasses($directory, $subclass)
+    {
+        $key = 'api.info.classes:'.$directory.$subclass;
+
+        $value = Cache::get($key, null);
+
+        if ($value === null) {
+            $value = $this->findClasses($directory, $subclass);
+        }
+
+        Cache::put($key, $value, 60);
+
+        return $value;
+    }
+
+    public function findClasses($directory, $subclass)
+    {
+        $finder = new \Symfony\Component\Finder\Finder();
+        $iter = new \hanneskod\classtools\Iterator\ClassIterator($finder->in(base_path($directory)));
+
+        return array_keys($iter->type($subclass)->where('isInstantiable')->getClassMap());
     }
 }
