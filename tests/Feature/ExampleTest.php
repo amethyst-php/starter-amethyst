@@ -12,8 +12,6 @@ class ExampleTest extends TestCase
             'username' => 'admin@admin.com',
             'password' => 'vercingetorige',
         ]);
-        print_r(route('app.auth.basic'));
-        print_r($response->getContent());
         $response->assertStatus(200);
 
         $access_token = json_decode($response->getContent())->data->access_token;
