@@ -13,3 +13,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::name('index')->get('/', 'IndexController@index');
+Route::name('console')->post('/admin/console', 'ConsoleController@index')->middleware(['auth:api', 'admin']);

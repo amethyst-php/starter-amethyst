@@ -5,9 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Route;
 use Railken\Amethyst\Contracts\DataBuilderContract;
-use Railken\Amethyst\Contracts\EventContract;
 
 class IndexController extends Controller
 {
@@ -47,6 +47,32 @@ class IndexController extends Controller
             ];
         })->values()->toArray();
 
+        $events = [];
+        $dataBuilders = [];
+
+        if ($user && $user->role === 'admin') {
+            foreach (Config::get('amethyst.event-logger.models-loggable') as $model) {
+                $events = array_merge($events, [
+                    'eloquent.created: '.$model,
+                    'eloquent.updated: '.$model,
+                    'eloquent.removed: '.$model,
+                ]);
+            }
+
+            foreach (Config::get('amethyst.event-logger.events-loggable') as $class) {
+                $events = array_merge(
+                    $events,
+                    $this->findCachedClasses('app', $class),
+                    $this->findCachedClasses('src', $class)
+                );
+            }
+
+            $dataBuilders = array_merge(
+                $this->findCachedClasses('app', DataBuilderContract::class),
+                $this->findCachedClasses('vendor/railken/amethyst-*/src', DataBuilderContract::class)
+            );
+        }
+
         return [
             'name'        => config('api.name'),
             'url'         => config('api.url'),
@@ -54,14 +80,8 @@ class IndexController extends Controller
             'version'     => config('api.version'),
             'endpoints'   => $endpoints,
             'app'         => [
-                'events' => array_merge(
-                    $this->findCachedClasses('app', EventContract::class),
-                    $this->findCachedClasses('vendor/railken/amethyst-*/src', EventContract::class)
-                ),
-                'data_builders' => array_merge(
-                    $this->findCachedClasses('app', DataBuilderContract::class),
-                    $this->findCachedClasses('vendor/railken/amethyst-*/src', DataBuilderContract::class)
-                ),
+                'events'        => $events,
+                'data_builders' => $dataBuilders,
             ],
         ];
     }
