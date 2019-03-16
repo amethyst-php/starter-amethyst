@@ -22,6 +22,7 @@
         "railken/amethyst-email-log": "0.1.*",
         "railken/amethyst-email-sender": "0.1.*",
         "railken/amethyst-event-logger": "0.1.*",
+        "railken/amethyst-notification-sender": "0.1.*",
         "railken/amethyst-exporter": "0.1.*",
         "railken/amethyst-importer": "0.1.*",
         "railken/amethyst-file": "0.1.*",

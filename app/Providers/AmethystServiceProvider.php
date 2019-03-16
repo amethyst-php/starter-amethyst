@@ -18,7 +18,7 @@ class AmethystServiceProvider extends ServiceProvider
             if (!($event->agent instanceof \Railken\Lem\Agents\SystemAgent)) {
                 $file = $event->file;
 
-                $url = $file->media[0]->disk === 's3' ? $file->media[0]->getTemporaryUrl(new \DateTime('+1 hour')) : $file->media[0]->getUrl();
+                $url = $file->media[0]->disk === 's3' ? $file->media[0]->getTemporaryUrl(new \DateTime('+1 hour')) : $file->media[0]->getFullUrl();
 
                 $event->agent->notify(new BaseNotification($event, 'The file is now ready. Hurry up!', ['url' => $url]));
                 event(new NotificationEvent($event->agent, config('app.name'), 'The file is now ready. Hurry up!'));

@@ -62,8 +62,7 @@ class IndexController extends Controller
             foreach (Config::get('amethyst.event-logger.events-loggable') as $class) {
                 $events = array_merge(
                     $events,
-                    $this->findCachedClasses('app', $class),
-                    $this->findCachedClasses('src', $class)
+                    $this->findCachedClasses('app', $class)
                 );
             }
 
